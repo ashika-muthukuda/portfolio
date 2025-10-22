@@ -59,7 +59,6 @@ export default function Contact() {
     { day: "Monday - Friday", hours: "9:00 AM - 6:00 PM PST" },
     { day: "Saturday", hours: "10:00 AM - 2:00 PM PST" },
     { day: "Sunday", hours: "Closed" },
-
   ];
 
   const faqs = [
@@ -83,7 +82,6 @@ export default function Contact() {
       answer:
         "Yes! I offer post-launch support and can help with design system maintenance, user feedback analysis, and iterative improvements.",
     },
-
   ];
 
   return (
@@ -98,10 +96,10 @@ export default function Contact() {
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Ready to bring your ideas to life through stunning, user-centered
-              design? <br /> I’d love to hear about your project and explore how we can
-              work together to craft something truly impactful — whether it’s a
-              brand-new product, a redesign, or a creative concept that needs to
-              come to life.
+              design? <br /> I’d love to hear about your project and explore how
+              we can work together to craft something truly impactful — whether
+              it’s a brand-new product, a redesign, or a creative concept that
+              needs to come to life.
             </p>
           </div>
         </ScrollAnimation>
@@ -122,7 +120,10 @@ export default function Contact() {
                 Send Me a Message
               </h2>
               <p className="text-muted-foreground text-lg">
-                Whether you have a clear vision or just an early idea, I’m always open to collaborating with passionate individuals, startups, and businesses who value creativity and thoughtful design.
+                Whether you have a clear vision or just an early idea, I’m
+                always open to collaborating with passionate individuals,
+                startups, and businesses who value creativity and thoughtful
+                design.
               </p>
             </div>
 
