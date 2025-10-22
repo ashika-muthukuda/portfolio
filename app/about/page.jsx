@@ -58,42 +58,15 @@ export default function About() {
 
   const journey = [
     {
-      year: "2024",
-      title: "Senior UI/UX Designer",
-      company: "TechFlow Solutions",
-      description:
-        "Leading design for enterprise SaaS products, mentoring junior designers, and establishing design systems that serve 100K+ users globally.",
-
+      year: "2022 – Present",
+      title: "BSc. (Hons) in Software Engineering",
+      company: "Sri Lanka Technology Campus",
+      description: "Expected Graduation: 2026",
       achievements: [
-        "Led 5 major product launches",
-        "Mentored 3 junior designers",
-        "Established design system",
-      ],
-    },
-    {
-      year: "2023",
-      title: "UI/UX Designer",
-      company: "StartupHub Collective",
-      description:
-        "Designed mobile and web applications for various startups, focusing on user acquisition and retention strategies.",
-
-      achievements: [
-        "Delivered 12+ product launches",
-        "Improved conversion by 35%",
-        "Built user research processes",
-      ],
-    },
-    {
-      year: "2022",
-      title: "Junior Designer",
-      company: "Creative Digital Agency",
-      description:
-        "Started my professional journey creating digital experiences for diverse clients across healthcare, fintech, and e-commerce.",
-
-      achievements: [
-        "Completed 20+ client projects",
-        "95% client satisfaction",
-        "Accessibility expertise",
+        "UI/UX Design & Human-Computer Interaction (HCI)",
+        "Front-End Development",
+        "Software Project Management",
+        "Creative Problem Solving",
       ],
     },
   ];
@@ -120,7 +93,6 @@ export default function About() {
     <div className="container mx-auto px-4 py-8 space-y-20">
       {/* Hero Section */}
       <section className="text-center space-y-8 py-16">
-
         <ScrollAnimation delay={200}>
           <div className="w-48 h-48 mx-auto rounded-full gradient-bg p-1 animate-pulse-glow">
             <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900 dark:to-pink-900 flex items-center justify-center">
@@ -155,7 +127,6 @@ export default function About() {
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
-
             <h2 className="text-3xl md:text-4xl font-bold">
               My Design Philosophy
             </h2>
@@ -166,7 +137,6 @@ export default function About() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 stagger-children">
             {values.map((value, index) => (
-
               <Card
                 key={index}
                 className="border-0 gradient-bg-soft card-hover text-center group"
@@ -197,7 +167,6 @@ export default function About() {
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
-
             <h2 className="text-3xl md:text-4xl font-bold">
               What I Bring to the Table
             </h2>
@@ -229,36 +198,36 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold">My Journey</h2>
 
             <p className="text-muted-foreground text-lg">
-              How I've grown as a designer over the years
+              How I’ve grown as a designer and creative technologist.
             </p>
           </div>
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-5xl mx-auto space-y-8">
             {journey.map((item, index) => (
               <div
                 key={index}
                 className="flex flex-col md:flex-row gap-8 items-start animate-fade-in"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="flex-shrink-0">
-                  <div className="w-20 h-20 rounded-full gradient-bg flex items-center justify-center text-white font-bold text-lg animate-pulse-glow">
-                    {item.year}
-                  </div>
-                </div>
                 <Card className="flex-grow border-0 gradient-bg-soft card-hover">
-                  <CardContent className="p-6 space-y-4">
-                    <div>
-                      <h3 className="text-xl font-bold">{item.title}</h3>
+                  <CardContent className="px-6 space-y-4">
+                    <div className="flex justify-between items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <h3 className="text-xl font-bold">{item.title}</h3>
 
-                      <p className="text-purple-600 font-medium">
-                        {item.company}
-                      </p>
+                        <p className="text-purple-600 font-medium">
+                          {item.company}
+                        </p>
+                      </div>
+                      <div className="w-48 h-8 rounded-full flex items-center justify-center text-white font-bold text-lg animate-pulse-glow">
+                        {item.year}
+                      </div>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>
                     <div className="space-y-2">
                       <h4 className="font-semibold text-sm text-purple-600">
-                        Key Achievements:
+                        Key Focus Areas:
                       </h4>
                       <ul className="space-y-1">
                         {item.achievements.map((achievement, i) => (
@@ -286,48 +255,47 @@ export default function About() {
           <div className="space-y-8">
             <h2 className="text-2xl font-bold flex items-center space-x-3">
               <GraduationCap className="w-8 h-8 text-purple-600" />
-              <span>Education</span>
+              <span>Other Education</span>
             </h2>
             <div className="space-y-6">
               <Card className="border-0 gradient-bg-soft card-hover">
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="text-lg font-semibold">Bachelor of Design</h3>
+                <CardContent className="py-3 space-y-3">
+                  <h3 className="text-lg font-semibold">
+                    Graphic Design Course (NVQ Level 4)
+                  </h3>
 
                   <p className="text-purple-600 font-medium">
-                    Interaction Design, Design University
+                    National Youth Service Council, Polgolla
                   </p>
-                  <p className="text-sm text-muted-foreground">
-                    2020-2024 • Magna Cum Laude
-                  </p>
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <p className="text-sm text-muted-foreground">2021</p>
+                  <div className="flex flex-wrap gap-2 pt-6">
                     <Badge variant="outline" className="text-xs">
-                      Design Thinking
+                      Visual Design
                     </Badge>
                     <Badge variant="outline" className="text-xs">
-                      HCI
-                    </Badge>
-                    <Badge variant="outline" className="text-xs">
-                      Psychology
+                      Branding & Digital Art
                     </Badge>
                   </div>
                 </CardContent>
               </Card>
               <Card className="border-0 gradient-bg-soft card-hover">
-                <CardContent className="p-6 space-y-3">
-
+                <CardContent className="py-3 space-y-3">
                   <h3 className="text-lg font-semibold">
-                    UX Research Certificate
+                    Diploma in Information Technology
                   </h3>
                   <p className="text-purple-600 font-medium">
-                    Google UX Design Professional Certificate
+                    Sath Sahana Foundation
                   </p>
-                  <p className="text-sm text-muted-foreground">2023</p>
-                  <div className="flex flex-wrap gap-2 pt-2">
+                  <p className="text-sm text-muted-foreground">2020</p>
+                  <div className="flex flex-wrap gap-2 pt-6">
                     <Badge variant="outline" className="text-xs">
-                      User Research
+                      Web Design Fundamentals
                     </Badge>
                     <Badge variant="outline" className="text-xs">
-                      Prototyping
+                      Basic Programming (Python, HTML, CSS)
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Digital Literacy
                     </Badge>
                   </div>
                 </CardContent>
@@ -342,49 +310,53 @@ export default function About() {
             </h2>
             <div className="space-y-6">
               <Card className="border-0 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 card-hover">
-                <CardContent className="p-6 space-y-3">
-
+                <CardContent className="space-y-3">
                   <h3 className="text-lg font-semibold">
-                    Design Innovation Award
+                    CodeMania Competition 2025
                   </h3>
                   <p className="text-muted-foreground">
-                    1st Place at TechDesign Hackathon 2024
+                    Showcased design and problem-solving skills through
+                    interactive UI prototyping.
                   </p>
                   <Badge
                     variant="secondary"
                     className="bg-yellow-100 text-yellow-800 border-0"
                   >
-                    Winner
+                    4th Place
                   </Badge>
                 </CardContent>
               </Card>
               <Card className="border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 card-hover">
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="text-lg font-semibold">Featured Designer</h3>
+                <CardContent className="space-y-3">
+                  <h3 className="text-lg font-semibold">IEEE IAS SLTC</h3>
 
                   <p className="text-muted-foreground">
-                    Design Weekly Magazine, Issue #47
+                    Recognized for exceptional contributions to design and
+                    project execution.
                   </p>
                   <Badge
                     variant="secondary"
                     className="bg-green-100 text-green-800 border-0"
                   >
-                    Featured
+                    IEEE Volunteer of the Month — March & December 2023
                   </Badge>
                 </CardContent>
               </Card>
               <Card className="border-0 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 card-hover">
-                <CardContent className="p-6 space-y-3">
-                  <h3 className="text-lg font-semibold">Top Designer</h3>
+                <CardContent className="space-y-3">
+                  <h3 className="text-lg font-semibold">
+                    Master Designer V2.0
+                  </h3>
 
                   <p className="text-muted-foreground">
-                    Dribbble Top 100 Designers 2023
+                    Successfully coordinated one of SLTC’s largest all-island
+                    design competitions.{" "}
                   </p>
                   <Badge
                     variant="secondary"
                     className="bg-blue-100 text-blue-800 border-0"
                   >
-                    Top 100
+                    Project Success{" "}
                   </Badge>
                 </CardContent>
               </Card>
@@ -431,7 +403,6 @@ export default function About() {
 
       {/* Personal Touch */}
       <ScrollAnimation>
-
         <section className="text-center space-y-8">
           <Card className="border-0 gradient-bg-soft max-w-4xl mx-auto card-hover">
             <CardContent className="p-12 space-y-8">
@@ -439,12 +410,15 @@ export default function About() {
                 <Coffee className="w-16 h-16 text-purple-600 animate-float" />
               </div>
               <div className="space-y-4">
-
                 <h2 className="text-2xl md:text-3xl font-bold">
                   Beyond the Pixels
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                  When I’m not designing, you’ll find me sketching concepts, enjoying nature walks, or experimenting with photography. I believe inspiration is everywhere — in colors, people, and stories. These little experiences spark new ideas and help me create designs that are authentic, emotional, and human.
+                  When I’m not designing, you’ll find me sketching concepts,
+                  enjoying nature walks, or experimenting with photography. I
+                  believe inspiration is everywhere, in colors, people, and
+                  stories. These little experiences spark new ideas and help me
+                  create designs that are authentic, emotional, and human.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
