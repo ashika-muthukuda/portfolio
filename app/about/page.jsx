@@ -33,6 +33,7 @@ export default function About() {
     {
       icon: Heart,
       title: "Empathy-Driven",
+
       description:
         "I design with people in mind — understanding user emotions, behaviors, and needs to create human-centered solutions.",
       color: "from-red-500 to-pink-500",
@@ -40,6 +41,7 @@ export default function About() {
     {
       icon: Target,
       title: "Results-Focused",
+
       description:
         "Every design decision has a purpose. I focus on clarity, usability, and measurable outcomes that help brands grow.",
       color: "from-blue-500 to-cyan-500",
@@ -47,6 +49,7 @@ export default function About() {
     {
       icon: Lightbulb,
       title: "Innovation-Minded",
+
       description:
         "I love experimenting with new design tools, creative styles, and emerging technologies to build modern, future-ready interfaces.",
       color: "from-yellow-500 to-orange-500",
@@ -60,6 +63,7 @@ export default function About() {
       company: "TechFlow Solutions",
       description:
         "Leading design for enterprise SaaS products, mentoring junior designers, and establishing design systems that serve 100K+ users globally.",
+
       achievements: [
         "Led 5 major product launches",
         "Mentored 3 junior designers",
@@ -72,6 +76,7 @@ export default function About() {
       company: "StartupHub Collective",
       description:
         "Designed mobile and web applications for various startups, focusing on user acquisition and retention strategies.",
+
       achievements: [
         "Delivered 12+ product launches",
         "Improved conversion by 35%",
@@ -84,6 +89,7 @@ export default function About() {
       company: "Creative Digital Agency",
       description:
         "Started my professional journey creating digital experiences for diverse clients across healthcare, fintech, and e-commerce.",
+
       achievements: [
         "Completed 20+ client projects",
         "95% client satisfaction",
@@ -113,39 +119,43 @@ export default function About() {
   return (
     <div className="container mx-auto px-4 py-8 space-y-20">
       {/* Hero Section */}
-      <ScrollAnimation delay={200}>
-        <div className="w-48 h-48 mx-auto rounded-full gradient-bg p-1 animate-pulse-glow">
-          <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900 dark:to-pink-900 flex items-center justify-center">
-            <User className="w-24 h-24 text-purple-600" />
+      <section className="text-center space-y-8 py-16">
+
+        <ScrollAnimation delay={200}>
+          <div className="w-48 h-48 mx-auto rounded-full gradient-bg p-1 animate-pulse-glow">
+            <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900 dark:to-pink-900 flex items-center justify-center">
+              <User className="w-24 h-24 text-purple-600" />
+            </div>
           </div>
-        </div>
-      </ScrollAnimation>
-      <ScrollAnimation>
-        <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Hi, I'm <span className="gradient-text">Ashika</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            A BSc. (Hons) Software Engineering undergraduate at SLTC Research
-            University and a UI/UX designer with a creative engineering
-            mindset. I specialize in crafting user-centered digital
-            experiences that balance functionality, emotion, and visual
-            appeal. My design philosophy revolves around simplicity, empathy,
-            and innovation — because I believe every design should make
-            technology feel more human and purposeful.
-            <br />
-            <br />
-            Beyond academics, I’m actively involved in creative and leadership
-            roles at SLTC, contributing to projects that combine design,
-            technology, and collaboration.
-          </p>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-6xl font-bold">
+              Hi, I'm <span className="gradient-text">Ashika</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              A BSc. (Hons) Software Engineering undergraduate at SLTC Research
+              University and a UI/UX designer with a creative engineering
+              mindset. I specialize in crafting user-centered digital
+              experiences that balance functionality, emotion, and visual
+              appeal. My design philosophy revolves around simplicity, empathy,
+              and innovation — because I believe every design should make
+              technology feel more human and purposeful.
+              <br />
+              <br />
+              Beyond academics, I’m actively involved in creative and leadership
+              roles at SLTC, contributing to projects that combine design,
+              technology, and collaboration.
+            </p>
+          </div>
+        </ScrollAnimation>
+      </section>
 
       {/* Values */}
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
+
             <h2 className="text-3xl md:text-4xl font-bold">
               My Design Philosophy
             </h2>
@@ -156,6 +166,7 @@ export default function About() {
           </div>
           <div className="grid md:grid-cols-3 gap-8 stagger-children">
             {values.map((value, index) => (
+
               <Card
                 key={index}
                 className="border-0 gradient-bg-soft card-hover text-center group"
@@ -170,6 +181,7 @@ export default function About() {
                     <h3 className="text-xl font-bold group-hover:gradient-text transition-all duration-300">
                       {value.title}
                     </h3>
+
                     <p className="text-muted-foreground leading-relaxed">
                       {value.description}
                     </p>
@@ -185,6 +197,7 @@ export default function About() {
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
+
             <h2 className="text-3xl md:text-4xl font-bold">
               What I Bring to the Table
             </h2>
@@ -214,6 +227,7 @@ export default function About() {
         <section className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">My Journey</h2>
+
             <p className="text-muted-foreground text-lg">
               How I've grown as a designer over the years
             </p>
@@ -234,6 +248,7 @@ export default function About() {
                   <CardContent className="p-6 space-y-4">
                     <div>
                       <h3 className="text-xl font-bold">{item.title}</h3>
+
                       <p className="text-purple-600 font-medium">
                         {item.company}
                       </p>
@@ -265,11 +280,125 @@ export default function About() {
         </section>
       </ScrollAnimation>
 
+      {/* Education & Achievements */}
+      <ScrollAnimation>
+        <section className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-8">
+            <h2 className="text-2xl font-bold flex items-center space-x-3">
+              <GraduationCap className="w-8 h-8 text-purple-600" />
+              <span>Education</span>
+            </h2>
+            <div className="space-y-6">
+              <Card className="border-0 gradient-bg-soft card-hover">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-lg font-semibold">Bachelor of Design</h3>
+
+                  <p className="text-purple-600 font-medium">
+                    Interaction Design, Design University
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    2020-2024 • Magna Cum Laude
+                  </p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <Badge variant="outline" className="text-xs">
+                      Design Thinking
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      HCI
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Psychology
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="border-0 gradient-bg-soft card-hover">
+                <CardContent className="p-6 space-y-3">
+
+                  <h3 className="text-lg font-semibold">
+                    UX Research Certificate
+                  </h3>
+                  <p className="text-purple-600 font-medium">
+                    Google UX Design Professional Certificate
+                  </p>
+                  <p className="text-sm text-muted-foreground">2023</p>
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    <Badge variant="outline" className="text-xs">
+                      User Research
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      Prototyping
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="space-y-8">
+            <h2 className="text-2xl font-bold flex items-center space-x-3">
+              <Award className="w-8 h-8 text-purple-600" />
+              <span>Recognition</span>
+            </h2>
+            <div className="space-y-6">
+              <Card className="border-0 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 card-hover">
+                <CardContent className="p-6 space-y-3">
+
+                  <h3 className="text-lg font-semibold">
+                    Design Innovation Award
+                  </h3>
+                  <p className="text-muted-foreground">
+                    1st Place at TechDesign Hackathon 2024
+                  </p>
+                  <Badge
+                    variant="secondary"
+                    className="bg-yellow-100 text-yellow-800 border-0"
+                  >
+                    Winner
+                  </Badge>
+                </CardContent>
+              </Card>
+              <Card className="border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 card-hover">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-lg font-semibold">Featured Designer</h3>
+
+                  <p className="text-muted-foreground">
+                    Design Weekly Magazine, Issue #47
+                  </p>
+                  <Badge
+                    variant="secondary"
+                    className="bg-green-100 text-green-800 border-0"
+                  >
+                    Featured
+                  </Badge>
+                </CardContent>
+              </Card>
+              <Card className="border-0 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 card-hover">
+                <CardContent className="p-6 space-y-3">
+                  <h3 className="text-lg font-semibold">Top Designer</h3>
+
+                  <p className="text-muted-foreground">
+                    Dribbble Top 100 Designers 2023
+                  </p>
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-800 border-0"
+                  >
+                    Top 100
+                  </Badge>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </ScrollAnimation>
+
       {/* Personal Interests */}
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">Beyond Design</h2>
+
             <p className="text-muted-foreground text-lg">
               What fuels my creativity outside the digital canvas.
             </p>
@@ -288,6 +417,7 @@ export default function About() {
                     <h3 className="text-lg font-bold group-hover:gradient-text transition-all duration-300">
                       {interest.label}
                     </h3>
+
                     <p className="text-muted-foreground text-sm">
                       {interest.description}
                     </p>
@@ -301,6 +431,7 @@ export default function About() {
 
       {/* Personal Touch */}
       <ScrollAnimation>
+
         <section className="text-center space-y-8">
           <Card className="border-0 gradient-bg-soft max-w-4xl mx-auto card-hover">
             <CardContent className="p-12 space-y-8">
@@ -308,15 +439,12 @@ export default function About() {
                 <Coffee className="w-16 h-16 text-purple-600 animate-float" />
               </div>
               <div className="space-y-4">
+
                 <h2 className="text-2xl md:text-3xl font-bold">
                   Beyond the Pixels
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                  When I’m not designing, you’ll find me sketching concepts,
-                  enjoying nature walks, or experimenting with photography. I
-                  believe inspiration is everywhere — in colors, people, and
-                  stories. These little experiences spark new ideas and help me
-                  create designs that are authentic, emotional, and human.
+                  When I’m not designing, you’ll find me sketching concepts, enjoying nature walks, or experimenting with photography. I believe inspiration is everywhere — in colors, people, and stories. These little experiences spark new ideas and help me create designs that are authentic, emotional, and human.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-3">
