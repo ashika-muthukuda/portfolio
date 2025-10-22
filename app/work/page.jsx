@@ -15,108 +15,126 @@ import {
 export default function Work() {
   const workExperience = [
     {
-      title: "Senior UI/UX Designer",
-      company: "TechFlow Solutions",
-      period: "Jan 2024 - Present",
-      type: "Full-time",
-      location: "San Francisco, CA",
+      title: "UI/UX Designer & Creative Technologist",
+      company: "Freelance",
+      period: "2023 - Present",
+      type: "Freelance",
+      location: "Remote",
       description:
-        "Leading design initiatives for enterprise SaaS products serving 100K+ users. Established comprehensive design system and mentored a team of 3 junior designers.",
+        "Designing user-centered digital experiences for individuals and small businesses, focusing on clean interfaces and intuitive interactions.",
       achievements: [
-        "Increased user engagement by 45% through redesigned onboarding flow",
-        "Reduced support tickets by 30% with improved information architecture",
-        "Led design system adoption across 5 product teams",
-        "Mentored 3 junior designers with 100% retention rate",
+        "Designed responsive web interfaces and brand identities for 15+ clients across various industries",
+        "Improved usability and visual consistency in multiple startup projects",
+        "Created wireframes, prototypes, and user flows aligning with client goals",
+        "Enhanced accessibility and inclusivity in product design",
       ],
       skills: [
-        "Design Leadership",
-        "Enterprise UX",
-        "Design Systems",
-        "Mentoring",
         "Figma",
         "User Research",
+        "Prototyping",
+        "Visual Design",
+        "Accessibility",
+        "Responsive Design",
       ],
       icon: Briefcase,
       color: "from-blue-500 to-cyan-500",
     },
     {
-      title: "UI/UX Designer",
-      company: "StartupHub Collective",
-      period: "Jun 2022 - Dec 2023",
-      type: "Full-time",
-      location: "Remote",
+      title: "Lead Designer – DroneU Project",
+      company: "IEEE Industry Applications Society (IAS), SLTC",
+      period: "2024",
+      type: "Project",
+      location: "SLTC",
       description:
-        "Designed mobile and web applications for various startups in the collective, focusing on rapid prototyping and user validation.",
+        "Led all creative and design aspects of the DroneU project, developing a consistent and futuristic visual identity that elevated the event's professional appeal.",
       achievements: [
-        "Delivered 12+ successful product launches",
-        "Improved average conversion rates by 35% across portfolio companies",
-        "Established user research processes for early-stage startups",
-        "Built design system used by 8 different products",
+        "Designed complete event branding, social media assets, and presentation materials",
+        "Collaborated with engineering and marketing teams to maintain design coherence",
+        "Increased participant engagement by 40% through visually appealing digital promotions",
       ],
       skills: [
-        "Mobile Design",
-        "Rapid Prototyping",
-        "User Research",
-        "A/B Testing",
-        "Startup Strategy",
+        "Branding",
+        "Event Design",
+        "UI Composition",
+        "Team Collaboration",
       ],
       icon: Rocket,
       color: "from-purple-500 to-pink-500",
     },
-
     {
-      title: "Junior UI/UX Designer",
-      company: "Creative Digital Agency",
-      period: "Aug 2021 - May 2022",
-      type: "Full-time",
-      location: "Los Angeles, CA",
+      title: "Secretary & Lead Designer",
+      company: "Media Unit, SLTC",
+      period: "2024",
+      type: "Project",
+      location: "SLTC",
       description:
-        "Collaborated with cross-functional teams to create digital experiences for clients across healthcare, fintech, and e-commerce industries.",
+        "Served as project secretary and design head for the Master Designer V2.0 All-Island Graphic Design Competition, managing over 120 participants and producing all visual and digital media content.",
       achievements: [
-        "Contributed to 20+ client projects with 95% satisfaction rate",
-        "Specialized in accessibility-first design approach",
-        "Developed expertise in design for regulated industries",
-        "Won 'Rising Star Designer' award in 2022",
+        "Designed the event logo, posters, and promotional materials",
+        "Streamlined participant submissions and visual judging formats",
+        "Helped achieve record participation and strong online visibility",
       ],
       skills: [
-        "Client Collaboration",
-        "Accessibility",
-        "Healthcare UX",
-        "Fintech Design",
+        "Graphic Design",
+        "Visual Identity",
+        "Project Coordination",
         "Adobe Creative Suite",
       ],
       icon: Building,
       color: "from-emerald-500 to-teal-500",
     },
+    {
+      title: "Design Team Deputy Head",
+      company: "Media Unit, SLTC",
+      period: "2023 - 2024",
+      type: "Leadership",
+      location: "SLTC",
+      description:
+        "Supported the creative direction of university events, digital media, and campaigns while mentoring junior designers.",
+      achievements: [
+        "Oversaw design content for 10+ university-level projects",
+        "Trained junior members on Photoshop and Illustrator",
+        "Ensured branding consistency across all student media channels",
+      ],
+      skills: [
+        "Mentoring",
+        "Leadership",
+        "Adobe Illustrator",
+        "Photoshop",
+        "Layout Design",
+      ],
+      icon: Users,
+      color: "from-green-500 to-teal-500",
+    },
   ];
 
   const volunteering = [
     {
-      title: "Lead UX Designer",
-      organization: "Code for Good",
-      period: "Mar 2023 - Present",
+      title: "Public Visibility Sub-Committee Head",
+      organization: "IEEE IAS, SLTC",
+      period: "2023 - 2024",
       description:
-        "Leading design efforts for nonprofit organizations, focusing on creating accessible digital solutions for underserved communities.",
-      impact: "Designed platforms serving 10,000+ community members",
+        "Managed creative visibility campaigns, social media graphics, and event branding to increase community engagement.",
+      impact: "Reached 10,000+ audience interactions through design-driven communication",
       projects: [
-        "Community Resource Portal",
-        "Food Bank Management System",
-        "Volunteer Coordination App",
+        "Social Media Campaigns",
+        "Event Branding",
+        "Community Engagement",
       ],
       icon: Heart,
       color: "from-red-500 to-pink-500",
     },
     {
       title: "Design Mentor",
-      organization: "Women in Design Collective",
-      period: "Jan 2023 - Present",
+      organization: "SLTC Design Circle",
+      period: "2024 - Present",
       description:
-        "Mentoring aspiring female designers through career transitions, portfolio reviews, and skill development workshops.",
-      impact: "Mentored 25+ designers with 80% job placement success",
+        "Guiding junior designers in developing their creative portfolios, improving design fundamentals, and building confidence in UI/UX design principles.",
+      impact: "Mentored 20+ students through one-on-one guidance and design review sessions",
       projects: [
-        "Monthly Portfolio Reviews",
-        "Career Transition Workshops",
-        "Design Challenge Bootcamps",
+        "Portfolio Reviews",
+        "Design Fundamentals",
+        "UI/UX Principles",
       ],
       icon: Users,
       color: "from-indigo-500 to-purple-500",
@@ -125,21 +143,35 @@ export default function Work() {
 
   const certifications = [
     {
-      name: "Google UX Design Professional Certificate",
-      year: "2023",
-      issuer: "Google",
+      name: "Professional Logo Design in Adobe Illustrator",
+      year: "2024",
+      issuer: "Udemy",
     },
     {
-      name: "Certified Usability Analyst (CUA)",
-      year: "2023",
-      issuer: "Human Factors International",
+      name: "Photoshop for Web Design Beginners",
+      year: "2024",
+      issuer: "Udemy",
     },
     {
-      name: "Accessibility Specialist Certification",
-      year: "2022",
-      issuer: "IAAP",
+      name: "Programming in Python: Python for Beginners",
+      year: "2024",
+      issuer: "University of Moratuwa",
     },
-    { name: "Design Thinking Facilitator", year: "2022", issuer: "IDEO" },
+    {
+      name: "Web Design for Beginners",
+      year: "2024",
+      issuer: "University of Moratuwa",
+    },
+    {
+      name: "Graphic Design (NVQ4)",
+      year: "2023",
+      issuer: "National Youth Service Council",
+    },
+    {
+      name: "Listening & Speech in English",
+      year: "2023",
+      issuer: "Open University",
+    },
   ];
 
   return (
@@ -152,9 +184,8 @@ export default function Work() {
               My Professional <span className="gradient-text">Journey</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              From junior designer to design leader, here's how I've grown while
-              creating impactful digital experiences and building meaningful
-              relationships along the way.
+              From a passionate learner to a creative design professional, my journey has been all about 
+              blending creativity, technology, and user empathy to craft meaningful digital experiences.
             </p>
           </div>
         </ScrollAnimation>
@@ -386,10 +417,10 @@ export default function Work() {
                 <span className="gradient-text">Amazing</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm always excited to take on new challenges and collaborate
-                with passionate teams. Whether you're a startup looking to make
-                your mark or an established company ready to innovate, let's
-                create something extraordinary together.
+                I'm always excited to take on new creative challenges and collaborate
+                with passionate teams. Whether you're a startup building your first 
+                product or an organization ready to reimagine your brand, let's create 
+                something extraordinary together.
               </p>
               <div className="flex flex-wrap justify-center gap-3 pt-4">
                 <Badge
@@ -409,7 +440,7 @@ export default function Work() {
                   variant="secondary"
                   className="bg-purple-100 text-purple-800 border-0"
                 >
-                  Full-time & Contract
+                  Freelance & Contract
                 </Badge>
               </div>
             </CardContent>
