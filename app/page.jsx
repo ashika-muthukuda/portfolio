@@ -175,7 +175,7 @@ export default function Home() {
             <h2 className="text-responsive-3xl font-bold text-center">
               My Design Arsenal
             </h2>
-            <div className="flex flex-wrap justify-center gap-5 sm:gap-8 stagger-children px-60">
+            <div className="flex flex-wrap justify-center gap-5 sm:gap-8 stagger-children px-10 md:px-20">
               {tools.map((tool, index) => (
                 <Badge
                   key={tool.name}
@@ -283,7 +283,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 sm:pt-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 sm:pt-8 px-30 sm:px-4">
               <Button
                 asChild
                 size="lg"

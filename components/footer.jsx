@@ -88,6 +88,8 @@ export default function Footer() {
             </div>
           </div>
 
+          <div className="lg:col-span-2 grid grid-cols-2">
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
@@ -127,7 +129,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          </div>
+          </div></div>
         </div>
 
         {/* Bottom Section */}
