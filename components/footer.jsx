@@ -32,16 +32,6 @@ export default function Footer() {
       icon: Linkedin,
     },
     {
-      name: "Instagram",
-      href: "https://instagram.com/sarahdesigns",
-      icon: Instagram,
-    },
-    {
-      name: "Twitter",
-      href: "https://twitter.com/sarahchen_ux",
-      icon: Twitter,
-    },
-    {
       name: "Github",
       href: "https://github.com/ashikamuthukuda",
       icon: Github,

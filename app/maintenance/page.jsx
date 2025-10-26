@@ -42,7 +42,7 @@ export default function Maintenance() {
                   <AlertTriangle className="w-4 h-4 mr-1" />
                   Site Maintenance
                 </Badge>
-                <Badge variant="secondary" className="bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400 border-0">
+                <Badge variant="secondary" className="bg-cyan-100 text-cyan-800 dark:bg-cyan-900/20 dark:text-cyan-400 border-0">
                   <Clock className="w-4 h-4 mr-1" />
                   Expected Duration: 2 Hours
                 </Badge>
@@ -51,7 +51,7 @@ export default function Maintenance() {
               {/* Progress Bar */}
               <div className="max-w-md mx-auto w-full space-y-2">
                 <div className="h-2 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-blue-500 to-purple-500 w-[60%] rounded-full 
+                  <div className="h-full bg-gradient-to-r from-teal-500 to-cyan-500 w-[60%] rounded-full 
                     animate-pulse"></div>
                 </div>
                 <p className="text-sm text-muted-foreground">Maintenance Progress: 60%</p>

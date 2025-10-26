@@ -18,8 +18,9 @@ export const Vortex = (props) => {
   const rangeSpeed = props.rangeSpeed || 1.5
   const baseRadius = props.baseRadius || 1
   const rangeRadius = props.rangeRadius || 2
-  const baseHue = props.baseHue || 220
-  const rangeHue = 100
+  // default to a teal/emerald base hue (around 170) if none provided
+  const baseHue = props.baseHue || 170
+  const rangeHue = props.rangeHue || 80
   const noiseSteps = 3
   const xOff = 0.00125
   const yOff = 0.00125

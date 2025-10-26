@@ -36,7 +36,7 @@ export default function About() {
 
       description:
         "I design with people in mind — understanding user emotions, behaviors, and needs to create human-centered solutions.",
-      color: "from-red-500 to-pink-500",
+      color: "from-emerald-500 to-teal-500",
     },
     {
       icon: Target,
@@ -44,7 +44,7 @@ export default function About() {
 
       description:
         "Every design decision has a purpose. I focus on clarity, usability, and measurable outcomes that help brands grow.",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-teal-500 to-cyan-500",
     },
     {
       icon: Lightbulb,
@@ -89,14 +89,42 @@ export default function About() {
     },
   ];
 
+  const certifications = [
+    {
+      name: "Professional Logo Design in Adobe Illustrator",
+      year: "2024",
+      issuer: "Udemy",
+    },
+    {
+      name: "Photoshop for Web Design Beginners",
+      year: "2024",
+      issuer: "Udemy",
+    },
+    {
+      name: "Programming in Python: Python for Beginners",
+      year: "2024",
+      issuer: "University of Moratuwa",
+    },
+    {
+      name: "Web Design for Beginners",
+      year: "2024",
+      issuer: "University of Moratuwa",
+    },
+    {
+      name: "Listening & Speech in English",
+      year: "2023",
+      issuer: "Open University",
+    },
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8 space-y-20">
       {/* Hero Section */}
       <section className="text-center space-y-8 py-16">
         <ScrollAnimation delay={200}>
           <div className="w-48 h-48 mx-auto rounded-full gradient-bg p-1 animate-pulse-glow">
-            <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900 dark:to-pink-900 flex items-center justify-center">
-              <User className="w-24 h-24 text-purple-600" />
+            <div className="w-full h-full rounded-full bg-gradient-to-br from-emerald-100 to-cyan-100 dark:from-emerald-900 dark:to-cyan-900 flex items-center justify-center">
+              <User className="w-24 h-24 text-teal-600" />
             </div>
           </div>
         </ScrollAnimation>
@@ -181,7 +209,7 @@ export default function About() {
               <Badge
                 key={skill}
                 variant="secondary"
-                className="text-base py-3 px-6 hover:scale-110 transition-all duration-300 card-hover cursor-pointer bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border-0"
+                className="text-base py-3 px-6 hover:scale-110 transition-all duration-300 card-hover cursor-pointer bg-gradient-to-r from-emerald-50 to-cyan-50 dark:from-emerald-900/20 dark:to-cyan-900/20 border-0"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {skill}
@@ -195,7 +223,9 @@ export default function About() {
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">My Journey</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              My Educational Journey
+            </h2>
 
             <p className="text-muted-foreground text-lg">
               How I’ve grown as a designer and creative technologist.
@@ -214,11 +244,11 @@ export default function About() {
                       <div className="flex-shrink-0">
                         <h3 className="text-xl font-bold">{item.title}</h3>
 
-                        <p className="text-purple-600 font-medium">
+                        <p className="text-teal-600 font-medium">
                           {item.company}
                         </p>
                       </div>
-                      <div className="w-48 h-8 rounded-full flex items-center justify-center text-white font-bold text-lg animate-pulse-glow">
+                      <div className="w-48 h-8 rounded-full flex items-center justify-center font-bold text-lg animate-pulse-glow">
                         {item.year}
                       </div>
                     </div>
@@ -226,7 +256,7 @@ export default function About() {
                       {item.description}
                     </p>
                     <div className="space-y-2">
-                      <h4 className="font-semibold text-sm text-purple-600">
+                      <h4 className="font-semibold text-sm text-teal-600">
                         Key Focus Areas:
                       </h4>
                       <ul className="space-y-1">
@@ -235,7 +265,7 @@ export default function About() {
                             key={i}
                             className="text-sm text-muted-foreground flex items-center"
                           >
-                            <div className="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></div>
+                            <div className="w-1.5 h-1.5 bg-teal-500 rounded-full mr-2"></div>
                             {achievement}
                           </li>
                         ))}
@@ -254,17 +284,17 @@ export default function About() {
         <section className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <h2 className="text-2xl font-bold flex items-center space-x-3">
-              <GraduationCap className="w-8 h-8 text-purple-600" />
+              <GraduationCap className="w-8 h-8 text-teal-600" />
               <span>Other Education</span>
             </h2>
             <div className="space-y-6">
               <Card className="border-0 gradient-bg-soft card-hover">
-                <CardContent className="py-3 space-y-3">
+                <CardContent className="py-1 space-y-1">
                   <h3 className="text-lg font-semibold">
                     Graphic Design Course (NVQ Level 4)
                   </h3>
 
-                  <p className="text-purple-600 font-medium">
+                  <p className="text-teal-600 font-medium">
                     National Youth Service Council, Polgolla
                   </p>
                   <p className="text-sm text-muted-foreground">2021</p>
@@ -279,11 +309,11 @@ export default function About() {
                 </CardContent>
               </Card>
               <Card className="border-0 gradient-bg-soft card-hover">
-                <CardContent className="py-3 space-y-3">
+                <CardContent className="py-1 space-y-1">
                   <h3 className="text-lg font-semibold">
                     Diploma in Information Technology
                   </h3>
-                  <p className="text-purple-600 font-medium">
+                  <p className="text-teal-600 font-medium">
                     Sath Sahana Foundation
                   </p>
                   <p className="text-sm text-muted-foreground">2020</p>
@@ -303,13 +333,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className="space-y-8">
+          {/* <div className="space-y-8">
             <h2 className="text-2xl font-bold flex items-center space-x-3">
-              <Award className="w-8 h-8 text-purple-600" />
+              <Award className="w-8 h-8 text-teal-600" />
               <span>Recognition</span>
             </h2>
             <div className="space-y-6">
-              <Card className="border-0 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 card-hover">
+              <Card className="border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 card-hover">
                 <CardContent className="space-y-3">
                   <h3 className="text-lg font-semibold">
                     CodeMania Competition 2025
@@ -320,7 +350,7 @@ export default function About() {
                   </p>
                   <Badge
                     variant="secondary"
-                    className="bg-yellow-100 text-yellow-800 border-0"
+                    className="bg-green-100 text-green-800 border-0"
                   >
                     4th Place
                   </Badge>
@@ -342,7 +372,7 @@ export default function About() {
                   </Badge>
                 </CardContent>
               </Card>
-              <Card className="border-0 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 card-hover">
+              <Card className="border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 card-hover">
                 <CardContent className="space-y-3">
                   <h3 className="text-lg font-semibold">
                     Master Designer V2.0
@@ -354,14 +384,116 @@ export default function About() {
                   </p>
                   <Badge
                     variant="secondary"
-                    className="bg-blue-100 text-blue-800 border-0"
+                    className="bg-green-100 text-green-800 border-0"
                   >
                     Project Success{" "}
                   </Badge>
                 </CardContent>
               </Card>
             </div>
+          </div> */}
+
+          <div className="space-y-8">
+            {/* Certifications */}
+            <div className="text-center space-y-4">
+              <h2 className="text-2xl font-bold flex items-center space-x-3">
+                <GraduationCap className="w-8 h-8 text-teal-600" />
+                <span>Certifications & Learning</span>
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {certifications.map((cert, index) => (
+                <ScrollAnimation key={index} delay={index * 100}>
+                  <Card className="border-0 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 card-hover">
+                    <CardContent className="px-6 space-y-3">
+                      <div className="flex items-start justify-between">
+                        <div className="space-y-1">
+                          <h3 className="font-semibold">{cert.name}</h3>
+                          <p className="text-teal-600 font-medium">
+                            {cert.issuer}
+                          </p>
+                        </div>
+                        {/* <Badge
+                          variant="secondary"
+                          className="bg-cyan-100 text-cyan-800 border-0"
+                        >
+                          {cert.year}
+                        </Badge> */}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollAnimation>
+              ))}
+            </div>{" "}
           </div>
+
+         
+        </section>
+      </ScrollAnimation>
+
+      {/* Achievements */}
+      <ScrollAnimation>
+        <section className="space-y-12">
+          <div className="text-center space-y-4 flex justify-center align-center">
+            <h2 className="text-2xl font-bold items-center space-x-3 flex">
+              <Award className="w-8 h-8 text-teal-600" />
+              <span>Recognition</span>
+            </h2>
+          </div>
+
+          <section className="grid md:grid-cols-2 gap-6">
+                <Card className="border-0 gradient-bg-soft card-hover">
+                  <CardContent className="space-y-3">
+                    <h3 className="text-lg font-semibold">
+                      CodeMania Competition 2025
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Showcased design and problem-solving skills through
+                      interactive UI prototyping.
+                    </p>
+                    <Badge
+                      variant="secondary"
+                      className="bg-green-50 text-green-800 border-0"
+                    >
+                      4th Place
+                    </Badge>
+                  </CardContent>
+                </Card>
+                <Card className="border-0 gradient-bg-soft card-hover">
+                  <CardContent className="space-y-3">
+                    <h3 className="text-lg font-semibold">IEEE IAS SLTC</h3>
+
+                    <p className="text-muted-foreground">
+                      Recognized for exceptional contributions to design and
+                      project execution.
+                    </p>
+                    <Badge
+                      variant="secondary"
+                      className="bg-green-50 text-green-800 border-0"
+                    >
+                      IEEE Volunteer of the Month — March & December 2023
+                    </Badge>
+                  </CardContent>
+                </Card>
+                <Card className="border-0 gradient-bg-soft card-hover">
+                  <CardContent className="space-y-3">
+                    <h3 className="text-lg font-semibold">
+                      Master Designer V2.0
+                    </h3>
+
+                    <p className="text-muted-foreground">
+                      Successfully coordinated one of SLTC’s largest all-island
+                      design competitions.{" "}
+                    </p>
+                    <Badge
+                      variant="secondary"
+                      className="bg-green-50 text-green-800 border-0"
+                    >
+                      Project Success{" "}
+                    </Badge>
+                  </CardContent>
+                </Card>
+          </section>
         </section>
       </ScrollAnimation>
 
@@ -407,7 +539,7 @@ export default function About() {
           <Card className="border-0 gradient-bg-soft max-w-4xl mx-auto card-hover">
             <CardContent className="p-12 space-y-8">
               <div className="flex justify-center">
-                <Coffee className="w-16 h-16 text-purple-600 animate-float" />
+                <Coffee className="w-16 h-16 text-teal-600 animate-float" />
               </div>
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
@@ -436,13 +568,13 @@ export default function About() {
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className="bg-blue-100 text-blue-800 border-0"
+                  className="bg-cyan-100 text-cyan-800 border-0"
                 >
                   📚 Reading
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className="bg-purple-100 text-purple-800 border-0"
+                  className="bg-emerald-100 text-emerald-800 border-0"
                 >
                   🍳 Cooking
                 </Badge>

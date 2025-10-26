@@ -25,7 +25,7 @@ import figmaIcon from "@/assets/svgs/figma.svg";
 import adobeXdIcon from "@/assets/svgs/adobe_xd.svg";
 import photoshopIcon from "@/assets/svgs/photoshop.svg";
 import illustratorIcon from "@/assets/svgs/illustrator.svg";
-import coreldrawIcon from "@/assets/svgs/coreldraw.svg";
+import coreldrawIcon from "@/assets/svgs/coreldraw-icon.svg";
 import indesignIcon from "@/assets/svgs/indesign.svg";
 import canvaIcon from "@/assets/svgs/canva.svg";
 
@@ -53,16 +53,16 @@ export default function Home() {
       name: "EcoShop Redesign",
       description:
         "Complete e-commerce platform redesign focusing on sustainability and user engagement with 40% conversion boost.",
-      icon: Palette,
-      color: "from-purple-500 to-pink-500",
+  icon: Palette,
+  color: "from-emerald-500 to-teal-500",
       metrics: "65% conversion ↑",
     },
     {
       name: "DataViz Dashboard",
       description:
         "Enterprise analytics dashboard with real-time data visualization and intuitive user interface design.",
-      icon: Users,
-      color: "from-blue-500 to-cyan-500",
+  icon: Users,
+  color: "from-teal-500 to-cyan-500",
       metrics: "99.2% accuracy",
     },
   ];
@@ -160,10 +160,7 @@ export default function Home() {
                             {feature}
                           </Badge>
                         ))}
-                      </div>
-                      <div className="flex items-center text-sm text-purple-600 font-medium group-hover:text-purple-700 transition-colors">
-                        Learn More →
-                      </div>
+                      </div>  
                     </div>
                   </CardContent>
                 </Card>
@@ -185,7 +182,7 @@ export default function Home() {
                   variant="secondary"
                   className="flex items-center gap-2 text-sm sm:text-lg py-2 sm:py-3 px-4 sm:px-6 
                      hover:scale-110 transition-all duration-300 card-hover cursor-pointer 
-                     bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-0"
+                     bg-gradient-to-r from-emerald-50 to-cyan-50 dark:from-emerald-900/20 dark:to-cyan-900/20 border-0"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <Image
@@ -245,7 +242,7 @@ export default function Home() {
                         {work.description}
                       </p>
                     </div>
-                    <div className="flex items-center text-sm text-purple-600 font-medium group-hover:text-purple-700 transition-colors">
+                    <div className="flex items-center text-sm text-teal-600 font-medium group-hover:text-teal-700 transition-colors">
                       View Case Study
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
@@ -259,10 +256,7 @@ export default function Home() {
                 asChild
                 size="lg"
                 variant="outline"
-                className=" text-black dark:text-white 
-                         hover:bg-black/10 dark:hover:bg-white/10 
-                         transition-all duration-300 hover:scale-105 group px-6 sm:px-8 py-3 sm:py-4 
-                         text-base sm:text-lg font-semibold w-full sm:w-auto"
+                className="hover:scale-105 transition-all duration-300 bg-transparent group w-full sm:w-auto"
               >
                 <Link href="/projects">
                   View My Work

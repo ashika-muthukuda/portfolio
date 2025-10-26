@@ -31,15 +31,15 @@ export function ModeToggle() {
   return (
     <div className="flex items-center space-x-3 bg-secondary/50 backdrop-blur-sm rounded-full px-3 py-2 border transition-all duration-300 hover:bg-secondary/70">
       <Sun
-        className={`h-4 w-4 transition-all duration-300 ${!isDark ? "text-yellow-500 scale-110" : "text-muted-foreground scale-90"}`}
+        className={`h-4 w-4 transition-all duration-300 ${!isDark ? "text-teal-400 scale-110" : "text-muted-foreground scale-90"}`}
       />
       <Switch
         checked={isDark}
         onCheckedChange={handleThemeChange}
-        className="data-[state=checked]:bg-purple-600 data-[state=unchecked]:bg-yellow-500"
+        className="data-[state=checked]:bg-teal-600 data-[state=unchecked]:bg-teal-500"
       />
       <Moon
-        className={`h-4 w-4 transition-all duration-300 ${isDark ? "text-purple-400 scale-110" : "text-muted-foreground scale-90"}`}
+        className={`h-4 w-4 transition-all duration-300 ${isDark ? "text-teal-400 scale-110" : "text-muted-foreground scale-90"}`}
       />
     </div>
   )

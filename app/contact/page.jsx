@@ -26,7 +26,7 @@ export default function Contact() {
       handle: "ashikamuthukuda@gmail.com",
       url: "mailto:ashikamuthukuda@gmail.com",
       icon: Mail,
-      color: "from-red-500 to-pink-500",
+      color: "from-emerald-500 to-teal-500",
       description: "Best way to reach me for project inquiries",
     },
     {
@@ -34,7 +34,7 @@ export default function Contact() {
       handle: "Ashika Muthukuda",
       url: "https://www.linkedin.com/in/am-muthukuda",
       icon: Linkedin,
-      color: "from-blue-600 to-blue-700",
+      color: "from-emerald-500 to-teal-500",
       description: "Professional network and career updates",
     },
     {
@@ -42,15 +42,15 @@ export default function Contact() {
       handle: "@ashikamuthukuda",
       url: "https://behance.net/ashikamuthukuda",
       icon: Palette,
-      color: "from-purple-500 to-pink-500",
+      color: "from-emerald-500 to-teal-500",
       description: "My design portfolio & creative showcases",
     },
     {
       name: "GitHub",
       handle: "@ashika-muthukuda",
-      url: "https://github.com/ashika-muthukuda",
+      url: "#",
       icon: Github,
-      color: "from-gray-800 to-gray-900",
+      color: "from-emerald-500 to-teal-500",
       description: "Design thoughts and industry insights",
     },
   ];
@@ -106,7 +106,7 @@ export default function Contact() {
 
         <ScrollAnimation delay={200}>
           <div className="flex justify-center">
-            <Coffee className="w-16 h-16 text-purple-600 animate-float" />
+            <Coffee className="w-16 h-16 text-teal-600 animate-float" />
           </div>
         </ScrollAnimation>
       </section>
@@ -271,8 +271,8 @@ export default function Contact() {
             <div className="space-y-4">
               <Card className="border-0 gradient-bg-soft card-hover">
                 <CardContent className="px-6">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <MapPin className="w-5 h-5 text-purple-600" />
+                    <div className="flex items-center space-x-3 mb-4">
+                    <MapPin className="w-5 h-5 text-teal-600" />
                     <h3 className="font-semibold">Location</h3>
                   </div>
                   <p className="text-muted-foreground">
@@ -286,7 +286,7 @@ export default function Contact() {
               {/* <Card className="border-0 gradient-bg-soft card-hover">
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <Clock className="w-5 h-5 text-purple-600" />
+                    <Clock className="w-5 h-5 text-teal-600" />
                     <h3 className="font-semibold">Working Hours</h3>
                   </div>
                   <div className="space-y-2">
@@ -363,7 +363,7 @@ export default function Contact() {
                 className="border-0 gradient-bg-soft card-hover"
               >
                 <CardContent className="p-6 space-y-3">
-                  <h3 className="font-semibold text-purple-600">
+                  <h3 className="font-semibold text-teal-600">
                     {faq.question}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">

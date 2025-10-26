@@ -19,7 +19,7 @@ export default function Work() {
       company: "Freelance",
       period: "2023 - Present",
       type: "Freelance",
-      location: "Remote",
+      color: "from-green-500 to-teal-500",
       description:
         "Designing user-centered digital experiences for individuals and small businesses, focusing on clean interfaces and intuitive interactions.",
       achievements: [
@@ -36,8 +36,8 @@ export default function Work() {
         "Accessibility",
         "Responsive Design",
       ],
-      icon: Briefcase,
-      color: "from-blue-500 to-cyan-500",
+  icon: Briefcase,
+  color: "from-teal-500 to-cyan-500",
     },
     {
       title: "Lead Designer – DroneU Project",
@@ -58,8 +58,8 @@ export default function Work() {
         "UI Composition",
         "Team Collaboration",
       ],
-      icon: Rocket,
-      color: "from-purple-500 to-pink-500",
+  icon: Rocket,
+  color: "from-emerald-500 to-teal-500",
     },
     {
       title: "Secretary & Lead Designer",
@@ -80,8 +80,8 @@ export default function Work() {
         "Project Coordination",
         "Adobe Creative Suite",
       ],
-      icon: Building,
-      color: "from-emerald-500 to-teal-500",
+  icon: Building,
+  color: "from-emerald-500 to-teal-500",
     },
     {
       title: "Design Team Deputy Head",
@@ -122,7 +122,7 @@ export default function Work() {
         "Community Engagement",
       ],
       icon: Heart,
-      color: "from-red-500 to-pink-500",
+      color: "from-emerald-500 to-teal-500",
     },
     {
       title: "Design Mentor",
@@ -137,42 +137,11 @@ export default function Work() {
         "UI/UX Principles",
       ],
       icon: Users,
-      color: "from-indigo-500 to-purple-500",
+      color: "from-emerald-500 to-teal-500",
     },
   ];
 
-  const certifications = [
-    {
-      name: "Professional Logo Design in Adobe Illustrator",
-      year: "2024",
-      issuer: "Udemy",
-    },
-    {
-      name: "Photoshop for Web Design Beginners",
-      year: "2024",
-      issuer: "Udemy",
-    },
-    {
-      name: "Programming in Python: Python for Beginners",
-      year: "2024",
-      issuer: "University of Moratuwa",
-    },
-    {
-      name: "Web Design for Beginners",
-      year: "2024",
-      issuer: "University of Moratuwa",
-    },
-    {
-      name: "Graphic Design (NVQ4)",
-      year: "2023",
-      issuer: "National Youth Service Council",
-    },
-    {
-      name: "Listening & Speech in English",
-      year: "2023",
-      issuer: "Open University",
-    },
-  ];
+  
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-20">
@@ -253,7 +222,7 @@ export default function Work() {
                         </p>
 
                         <div className="space-y-4">
-                          <h4 className="text-lg font-semibold text-purple-600">
+                          <h4 className="text-lg font-semibold text-teal-600">
                             Key Achievements
                           </h4>
                           <ul className="space-y-3">
@@ -272,7 +241,7 @@ export default function Work() {
                         </div>
 
                         <div className="space-y-3">
-                          <h4 className="text-lg font-semibold text-purple-600">
+                          <h4 className="text-lg font-semibold text-teal-600">
                             Core Skills
                           </h4>
                           <div className="flex flex-wrap gap-2">
@@ -321,7 +290,7 @@ export default function Work() {
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-xl font-bold">{volunteer.title}</h3>
-                        <p className="text-lg text-purple-600 font-medium">
+                        <p className="text-lg text-teal-600 font-medium">
                           {volunteer.organization}
                         </p>
                         <Badge
@@ -344,7 +313,7 @@ export default function Work() {
                       </div>
 
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-purple-600 text-sm">
+                        <h4 className="font-semibold text-teal-600 text-sm">
                           Key Projects:
                         </h4>
                         <div className="flex flex-wrap gap-2">
@@ -368,44 +337,7 @@ export default function Work() {
         </section>
       </ScrollAnimation>
 
-      {/* Certifications */}
-      <ScrollAnimation>
-        <section className="space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Certifications & Learning
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Continuous learning to stay at the forefront of design
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {certifications.map((cert, index) => (
-              <ScrollAnimation key={index} delay={index * 100}>
-                <Card className="border-0 gradient-bg-soft card-hover">
-                  <CardContent className="p-6 space-y-3">
-                    <div className="flex items-start justify-between">
-                      <div className="space-y-1">
-                        <h3 className="font-semibold">{cert.name}</h3>
-                        <p className="text-purple-600 font-medium">
-                          {cert.issuer}
-                        </p>
-                      </div>
-                      <Badge
-                        variant="secondary"
-                        className="bg-blue-100 text-blue-800 border-0"
-                      >
-                        {cert.year}
-                      </Badge>
-                    </div>
-                  </CardContent>
-                </Card>
-              </ScrollAnimation>
-            ))}
-          </div>
-        </section>
-      </ScrollAnimation>
+      
 
       {/* Call to Action */}
       <ScrollAnimation>
@@ -432,13 +364,13 @@ export default function Work() {
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className="bg-blue-100 text-blue-800 border-0"
+                  className="bg-cyan-100 text-cyan-800 border-0"
                 >
                   Remote-friendly
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className="bg-purple-100 text-purple-800 border-0"
+                  className="bg-emerald-100 text-emerald-800 border-0"
                 >
                   Freelance & Contract
                 </Badge>

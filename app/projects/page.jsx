@@ -80,7 +80,7 @@ export default function Projects() {
       },
       skills: ["Enterprise UX", "Data Visualization", "Dashboard Design", "B2B UX"],
       icon: BarChart3,
-      color: "from-blue-500 to-cyan-500",
+  color: "from-teal-500 to-cyan-500",
       featured: false,
       year: "2023",
     },
@@ -100,7 +100,7 @@ export default function Projects() {
       },
       skills: ["Social UX", "Community Design", "Mobile-first Design", "Location Services"],
       icon: Users,
-      color: "from-purple-500 to-pink-500",
+  color: "from-emerald-500 to-teal-500",
       featured: false,
       year: "2023",
     },
@@ -141,7 +141,7 @@ export default function Projects() {
       },
       skills: ["Portfolio Design", "Photography UX", "Client Experience", "Visual Hierarchy"],
       icon: Camera,
-      color: "from-indigo-500 to-purple-500",
+      color: "from-emerald-500 to-teal-500",
       featured: false,
       year: "2022",
     },
@@ -167,8 +167,7 @@ export default function Projects() {
               Featured <span className="gradient-text">Projects</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Explore my collection of design projects that showcase user-centered thinking, creative problem-solving,
-              and measurable business impact across various industries.
+              Explore my collection of design projects that showcase creativity, user-centered thinking, and visual storytelling — blending design aesthetics with functionality across various domains.
             </p>
           </div>
         </ScrollAnimation>
@@ -179,7 +178,7 @@ export default function Projects() {
               <Badge
                 key={category.name}
                 variant="secondary"
-                className="text-sm py-2 px-4 hover:scale-105 transition-all duration-300 cursor-pointer bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-0"
+                className="text-sm py-2 px-4 hover:scale-105 transition-all duration-300 cursor-pointer bg-gradient-to-r from-emerald-50 to-cyan-50 dark:from-emerald-900/20 dark:to-cyan-900/20 border-0"
               >
                 {category.name} ({category.count})
               </Badge>
@@ -193,7 +192,7 @@ export default function Projects() {
         <section className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">Spotlight Projects</h2>
-            <p className="text-muted-foreground text-lg">Deep dives into my most impactful work</p>
+            <p className="text-muted-foreground text-lg">Explore my collection of design projects that showcase creativity, user-centered thinking, and visual storytelling — blending design aesthetics with functionality across various domains.</p>
           </div>
 
           <div className="space-y-16">
@@ -241,21 +240,21 @@ export default function Projects() {
                       <div className="xl:w-3/5 p-12 space-y-8">
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
-                            <h4 className="font-semibold text-purple-600 mb-2 flex items-center gap-2">
+                            <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Target className="w-4 h-4" />
                               My Role
                             </h4>
                             <p className="text-muted-foreground">{project.role}</p>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-purple-600 mb-2 flex items-center gap-2">
+                            <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Calendar className="w-4 h-4" />
                               Duration
                             </h4>
                             <p className="text-muted-foreground">{project.duration}</p>
                           </div>
                           <div className="md:col-span-2">
-                            <h4 className="font-semibold text-purple-600 mb-2 flex items-center gap-2">
+                            <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Users className="w-4 h-4" />
                               Team
                             </h4>
@@ -264,7 +263,7 @@ export default function Projects() {
                         </div>
 
                         <div>
-                          <h4 className="font-semibold text-purple-600 mb-3">Design Highlights</h4>
+                          <h4 className="font-semibold text-teal-600 mb-3">Design Highlights</h4>
                           <p className="text-muted-foreground leading-relaxed">{project.highlights}</p>
                         </div>
 
@@ -277,11 +276,11 @@ export default function Projects() {
                         </div>
 
                         <div className="space-y-4">
-                          <h4 className="font-semibold text-purple-600">Skills Applied</h4>
+                          <h4 className="font-semibold text-teal-600">Skills Applied</h4>
                           <div className="flex flex-wrap gap-2">
                             <Badge
                               variant="secondary"
-                              className="flex items-center space-x-1 bg-blue-100 text-blue-800 border-0"
+                              className="flex items-center space-x-1 bg-cyan-100 text-cyan-800 border-0"
                             >
                               <Figma className="w-3 h-3" />
                               <span>Figma</span>
@@ -351,15 +350,15 @@ export default function Projects() {
                         {project.name}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed text-sm">{project.overview}</p>
-                      <p className="text-xs text-purple-600 font-medium">
+                      <p className="text-xs text-teal-600 font-medium">
                         {project.role} • {project.duration}
                       </p>
                     </div>
 
-                    <div className="space-y-4">
-                      <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                        <p className="text-sm font-medium text-blue-800 dark:text-blue-200">{project.impact}</p>
-                      </div>
+                      <div className="space-y-4">
+                        <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+                          <p className="text-sm font-medium text-teal-800 dark:text-teal-200">{project.impact}</p>
+                        </div>
 
                       <div className="flex flex-wrap gap-2">
                         {project.skills.slice(0, 3).map((skill, i) => (

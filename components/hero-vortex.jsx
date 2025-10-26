@@ -12,7 +12,7 @@ export default function HeroVortex() {
         backgroundColor="transparent"
         rangeY={800}
         particleCount={100}
-        baseHue={260}
+        baseHue={170} /* shifted to teal/emerald */
         className="flex items-center flex-col justify-center px-4 sm:px-6 md:px-10 py-4 w-full h-full"
       >
         <div className="relative z-10 text-center space-y-6 sm:space-y-8 max-w-5xl mx-auto">
@@ -35,11 +35,11 @@ export default function HeroVortex() {
 
           {/* Main Heading */}
           <div className="space-y-4 sm:space-y-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight 
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight 
                            text-black dark:text-white transition-colors duration-500">
               Crafting Digital
               <br />
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
                 Experiences
               </span>
             </h1>
@@ -86,17 +86,17 @@ export default function HeroVortex() {
 
           {/* Floating Elements - Hidden on mobile */}
           <div className="absolute top-20 left-10 hidden lg:block">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 opacity-20 animate-float"></div>
+            <div className="w-20 h-20 rounded-full bg-gradient-to-r from-emerald-300 to-teal-300 opacity-20 animate-float"></div>
           </div>
           <div className="absolute bottom-20 right-10 hidden lg:block">
             <div
-              className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 opacity-20 animate-float"
+              className="w-16 h-16 rounded-full bg-gradient-to-r from-teal-400 to-cyan-400 opacity-20 animate-float"
               style={{ animationDelay: "1s" }}
             ></div>
           </div>
           <div className="absolute top-1/2 left-20 hidden xl:block">
             <div
-              className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-400 to-yellow-400 opacity-20 animate-float"
+              className="w-12 h-12 rounded-full bg-gradient-to-r from-emerald-300 to-cyan-200 opacity-20 animate-float"
               style={{ animationDelay: "2s" }}
             ></div>
           </div>
