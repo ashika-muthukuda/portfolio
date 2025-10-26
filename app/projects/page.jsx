@@ -1,7 +1,7 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { ScrollAnimation } from "@/components/scroll-animation"
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ScrollAnimation } from "@/components/scroll-animation";
 import {
   Figma,
   Smartphone,
@@ -15,28 +15,40 @@ import {
   Calendar,
   Target,
   TrendingUp,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
+
+import imgp11 from '../../assets/imgs/img-p11.png';
 
 export default function Projects() {
   const projects = [
     {
-      name: "HealthFlow Mobile",
-      category: "Healthcare • Mobile App",
+      name: "Donut Delight - Flavorful Donut Banner Design",
+      category: "Food & Beverage • Web Designs",
       overview:
-        "A comprehensive health tracking app that helps users monitor their wellness journey with AI-powered insights and personalized recommendations.",
+        "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
       role: "Lead UI/UX Designer",
+      colors: ["Pink", "purple", "green with white accents"],
+      thumnailImage: imgp11 ,
       duration: "4 months",
       team: "Product Manager, 2 Developers, Data Scientist",
       highlights:
         "Intuitive health data visualization, gamified wellness challenges, and accessible design for all age groups.",
-      impact: "40% increase in daily active users, 60% improvement in health goal completion rates",
+      impact:
+        "40% increase in daily active users, 60% improvement in health goal completion rates",
       metrics: {
         users: "50K+",
         rating: "4.8/5",
         retention: "85%",
       },
-      skills: ["Mobile Design", "Health UX", "Data Visualization", "Accessibility", "User Research"],
+      colors: ["Emerald", "Teal"],
+      skills: [
+        "Mobile Design",
+        "Health UX",
+        "Data Visualization",
+        "Accessibility",
+        "User Research",
+      ],
       icon: Smartphone,
       color: "from-emerald-500 to-teal-500",
       featured: true,
@@ -50,14 +62,22 @@ export default function Projects() {
       role: "Senior UI/UX Designer",
       duration: "6 months",
       team: "Creative Director, Frontend Developer, Marketing Team",
-      highlights: "Sustainable product storytelling, carbon footprint calculator, and seamless checkout experience.",
-      impact: "65% increase in conversion rate, 45% boost in average order value",
+      highlights:
+        "Sustainable product storytelling, carbon footprint calculator, and seamless checkout experience.",
+      impact:
+        "65% increase in conversion rate, 45% boost in average order value",
       metrics: {
         conversion: "+65%",
         revenue: "+120%",
         satisfaction: "96%",
       },
-      skills: ["E-commerce UX", "Sustainability Design", "Conversion Optimization", "Brand Design"],
+      colors: ["Green", "Emerald"],
+      skills: [
+        "E-commerce UX",
+        "Sustainability Design",
+        "Conversion Optimization",
+        "Brand Design",
+      ],
       icon: ShoppingBag,
       color: "from-green-500 to-emerald-500",
       featured: true,
@@ -71,53 +91,73 @@ export default function Projects() {
       role: "UI/UX Designer",
       duration: "8 months",
       team: "Product Owner, 3 Developers, Business Analyst",
-      highlights: "Complex data simplification, customizable widgets, and role-based access controls.",
-      impact: "50% reduction in report generation time, 35% increase in user adoption",
+      highlights:
+        "Complex data simplification, customizable widgets, and role-based access controls.",
+      impact:
+        "50% reduction in report generation time, 35% increase in user adoption",
       metrics: {
         efficiency: "+50%",
         adoption: "+35%",
         accuracy: "99.2%",
       },
-      skills: ["Enterprise UX", "Data Visualization", "Dashboard Design", "B2B UX"],
+      colors: ["Teal", "Cyan"],
+      skills: [
+        "Enterprise UX",
+        "Data Visualization",
+        "Dashboard Design",
+        "B2B UX",
+      ],
       icon: BarChart3,
-  color: "from-teal-500 to-cyan-500",
+      color: "from-teal-500 to-cyan-500",
       featured: false,
       year: "2023",
     },
     {
       name: "ConnectLocal Social",
       category: "Social • Community Platform",
-      overview: "Social networking platform designed to connect local communities and promote neighborhood engagement.",
+      overview:
+        "Social networking platform designed to connect local communities and promote neighborhood engagement.",
       role: "Lead Designer",
       duration: "5 months",
       team: "Startup Founder, Full-stack Developer, Community Manager",
-      highlights: "Location-based networking, event discovery, and community-driven content moderation.",
-      impact: "10K+ active community members, 200+ local events organized monthly",
+      highlights:
+        "Location-based networking, event discovery, and community-driven content moderation.",
+      impact:
+        "10K+ active community members, 200+ local events organized monthly",
       metrics: {
         communities: "150+",
         events: "200+/mo",
         engagement: "78%",
       },
-      skills: ["Social UX", "Community Design", "Mobile-first Design", "Location Services"],
+      colors: ["Emerald", "Teal"],
+      skills: [
+        "Social UX",
+        "Community Design",
+        "Mobile-first Design",
+        "Location Services",
+      ],
       icon: Users,
-  color: "from-emerald-500 to-teal-500",
+      color: "from-emerald-500 to-teal-500",
       featured: false,
       year: "2023",
     },
     {
       name: "FitTrack Pro",
       category: "Fitness • Mobile App",
-      overview: "Comprehensive fitness tracking app with AI-powered workout recommendations and social challenges.",
+      overview:
+        "Comprehensive fitness tracking app with AI-powered workout recommendations and social challenges.",
       role: "UI/UX Designer",
       duration: "3 months",
       team: "Product Manager, iOS Developer, Fitness Expert",
-      highlights: "Gamified workout experience, social challenges, and personalized fitness plans.",
+      highlights:
+        "Gamified workout experience, social challenges, and personalized fitness plans.",
       impact: "70% user retention after 3 months, 4.9 App Store rating",
       metrics: {
         retention: "70%",
         rating: "4.9/5",
         workouts: "1M+",
       },
+      colors: ["Emerald", "Teal"],
       skills: ["Fitness UX", "Gamification", "Social Features", "iOS Design"],
       icon: Monitor,
       color: "from-orange-500 to-red-500",
@@ -132,42 +172,60 @@ export default function Projects() {
       role: "Freelance Designer",
       duration: "2 months",
       team: "Photographer, Web Developer",
-      highlights: "Image-focused layouts, client proofing system, and integrated booking functionality.",
+      highlights:
+        "Image-focused layouts, client proofing system, and integrated booking functionality.",
       impact: "300% increase in client inquiries, featured in design galleries",
       metrics: {
         inquiries: "+300%",
         bookings: "+250%",
         satisfaction: "100%",
       },
-      skills: ["Portfolio Design", "Photography UX", "Client Experience", "Visual Hierarchy"],
+      colors: ["Pink", "Purple", "White"],
+      skills: [
+        "Portfolio Design",
+        "Photography UX",
+        "Client Experience",
+        "Visual Hierarchy",
+      ],
       icon: Camera,
       color: "from-emerald-500 to-teal-500",
       featured: false,
       year: "2022",
     },
-  ]
+  ];
 
-  const featuredProjects = projects.filter((p) => p.featured)
-  const otherProjects = projects.filter((p) => !p.featured)
+  const featuredProjects = projects.filter((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
 
   const projectCategories = [
     { name: "All Projects", count: projects.length },
-    { name: "Mobile Apps", count: projects.filter((p) => p.category.includes("Mobile")).length },
-    { name: "Web Platforms", count: projects.filter((p) => p.category.includes("Web")).length },
-    { name: "Enterprise", count: projects.filter((p) => p.category.includes("Enterprise")).length },
-  ]
+    {
+      name: "Mobile Apps",
+      count: projects.filter((p) => p.category.includes("Mobile")).length,
+    },
+    {
+      name: "Web Platforms",
+      count: projects.filter((p) => p.category.includes("Web")).length,
+    },
+    {
+      name: "Enterprise",
+      count: projects.filter((p) => p.category.includes("Enterprise")).length,
+    },
+  ];
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-20">
       {/* Hero Section */}
-      <section className="text-center space-y-8 py-16">
+      <section className="text-center space-y-8 py-12">
         <ScrollAnimation>
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">
               Featured <span className="gradient-text">Projects</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Explore my collection of design projects that showcase creativity, user-centered thinking, and visual storytelling — blending design aesthetics with functionality across various domains.
+              Explore my collection of design projects that showcase creativity,
+              user-centered thinking, and visual storytelling — blending design
+              aesthetics with functionality across various domains.
             </p>
           </div>
         </ScrollAnimation>
@@ -191,19 +249,25 @@ export default function Projects() {
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">Spotlight Projects</h2>
-            <p className="text-muted-foreground text-lg">Explore my collection of design projects that showcase creativity, user-centered thinking, and visual storytelling — blending design aesthetics with functionality across various domains.</p>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Spotlight Projects
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-4xl mx-auto">
+              Explore my collection of design projects that showcase creativity,
+              user-centered thinking, and visual storytelling — blending design
+              aesthetics with functionality across various domains.
+            </p>
           </div>
 
-          <div className="space-y-16">
+          <div className="space-y-12">
             {featuredProjects.map((project, index) => (
               <ScrollAnimation key={index} delay={index * 200}>
                 <Card className="border-0 overflow-hidden gradient-bg-soft card-hover">
-                  <CardContent className="p-0">
+                  <CardContent className="px-6">
                     <div className="flex flex-col xl:flex-row">
                       {/* Project Visual */}
                       <div
-                        className={`xl:w-2/5 p-12 bg-gradient-to-br ${project.color} text-white flex flex-col justify-center`}
+                        className={`xl:w-3/5 p-12 rounded-lg border-1 border-muted-foreground/30 flex flex-col justify-center`}
                       >
                         <div className="space-y-8">
                           <div className="flex items-center justify-between">
@@ -212,59 +276,95 @@ export default function Projects() {
                             </div>
                             <Badge
                               variant="secondary"
-                              className="bg-white/20 text-white border-0 flex items-center gap-1"
+                              className="bg-white/20 border-0 flex items-center gap-1"
                             >
                               <Calendar className="w-3 h-3" />
                               {project.year}
                             </Badge>
                           </div>
                           <div className="space-y-4">
-                            <Badge variant="secondary" className="bg-white/20 text-white border-0">
+                            <Badge
+                              variant="secondary"
+                              className="bg-white/20 border-0"
+                            >
                               {project.category}
                             </Badge>
-                            <h3 className="text-3xl font-bold">{project.name}</h3>
-                            <p className="text-xl opacity-90 leading-relaxed">{project.overview}</p>
+                            <h3 className="text-3xl font-bold">
+                              {project.name}
+                            </h3>
+                            <p className="text-xl opacity-90 leading-relaxed text-muted-foreground">
+                              {project.overview}
+                            </p>
                           </div>
-                          <div className="grid grid-cols-3 gap-4 pt-4">
+                          {/* <div className="grid grid-cols-3 gap-4 pt-4">
                             {Object.entries(project.metrics).map(([key, value]) => (
                               <div key={key} className="text-center">
                                 <div className="text-2xl font-bold">{value}</div>
                                 <div className="text-sm opacity-75 capitalize">{key}</div>
                               </div>
                             ))}
+                          </div> */}
+                          <div className="space-y-0 flex gap-3">
+                            <h4 className="font-semibold text-teal-600">
+                              Color Scheme:
+                            </h4>
+                            <div className="flex flex-wrap gap-2">
+                              {project.colors.map((skill, i) => (
+                                <p key={i} className="text-muted-foreground">
+                                  {skill}
+                                </p>
+                              ))}
+                            </div>
                           </div>
+                          <Button
+                            variant="outline"
+                            className="hover:scale-105 transition-all duration-300 bg-transparent group"
+                          >
+                            View Prototype
+                            <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
+                          </Button>
                         </div>
                       </div>
 
                       {/* Project Details */}
-                      <div className="xl:w-3/5 p-12 space-y-8">
+                      <div className="xl:w-2/5 p-12 space-y-8">
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Target className="w-4 h-4" />
                               My Role
                             </h4>
-                            <p className="text-muted-foreground">{project.role}</p>
+                            <p className="text-muted-foreground">
+                              {project.role}
+                            </p>
                           </div>
                           <div>
                             <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Calendar className="w-4 h-4" />
                               Duration
                             </h4>
-                            <p className="text-muted-foreground">{project.duration}</p>
+                            <p className="text-muted-foreground">
+                              {project.duration}
+                            </p>
                           </div>
                           <div className="md:col-span-2">
                             <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Users className="w-4 h-4" />
                               Team
                             </h4>
-                            <p className="text-muted-foreground">{project.team}</p>
+                            <p className="text-muted-foreground">
+                              {project.team}
+                            </p>
                           </div>
                         </div>
 
                         <div>
-                          <h4 className="font-semibold text-teal-600 mb-3">Design Highlights</h4>
-                          <p className="text-muted-foreground leading-relaxed">{project.highlights}</p>
+                          <h4 className="font-semibold text-teal-600 mb-3">
+                            Design Highlights
+                          </h4>
+                          <p className="text-muted-foreground leading-relaxed">
+                            {project.highlights}
+                          </p>
                         </div>
 
                         <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border-l-4 border-green-500">
@@ -272,11 +372,15 @@ export default function Projects() {
                             <TrendingUp className="w-4 h-4" />
                             Business Impact
                           </h4>
-                          <p className="text-green-700 dark:text-green-300">{project.impact}</p>
+                          <p className="text-green-700 dark:text-green-300">
+                            {project.impact}
+                          </p>
                         </div>
 
                         <div className="space-y-4">
-                          <h4 className="font-semibold text-teal-600">Skills Applied</h4>
+                          <h4 className="font-semibold text-teal-600">
+                            Skills Applied
+                          </h4>
                           <div className="flex flex-wrap gap-2">
                             <Badge
                               variant="secondary"
@@ -286,7 +390,11 @@ export default function Projects() {
                               <span>Figma</span>
                             </Badge>
                             {project.skills.map((skill, i) => (
-                              <Badge key={i} variant="outline" className="hover:scale-105 transition-transform">
+                              <Badge
+                                key={i}
+                                variant="outline"
+                                className="hover:scale-105 transition-transform"
+                              >
                                 {skill}
                               </Badge>
                             ))}
@@ -305,8 +413,14 @@ export default function Projects() {
                             Live Demo
                             <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
                           </Button>
-                        </div>
+                        </div><img
+                        src="assets/imgs/img-p11.png"
+                        alt={project.name}
+                        className="w-full h-auto rounded-lg"
+                      />
                       </div>
+
+                      
                     </div>
                   </CardContent>
                 </Card>
@@ -321,7 +435,9 @@ export default function Projects() {
         <section className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">More Projects</h2>
-            <p className="text-muted-foreground text-lg">Additional work showcasing diverse design challenges</p>
+            <p className="text-muted-foreground text-lg">
+              Additional work showcasing diverse design challenges
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -336,7 +452,10 @@ export default function Projects() {
                         <project.icon className="w-7 h-7 text-white" />
                       </div>
                       <div className="text-right">
-                        <Badge variant="secondary" className="text-xs mb-2 bg-gray-100 text-gray-800 border-0">
+                        <Badge
+                          variant="secondary"
+                          className="text-xs mb-2 bg-gray-100 text-gray-800 border-0"
+                        >
                           {project.year}
                         </Badge>
                         <Badge variant="secondary" className="text-xs block">
@@ -349,16 +468,20 @@ export default function Projects() {
                       <h3 className="text-xl font-bold group-hover:gradient-text transition-all duration-300">
                         {project.name}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm">{project.overview}</p>
+                      <p className="text-muted-foreground leading-relaxed text-sm">
+                        {project.overview}
+                      </p>
                       <p className="text-xs text-teal-600 font-medium">
                         {project.role} • {project.duration}
                       </p>
                     </div>
 
-                      <div className="space-y-4">
-                        <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
-                          <p className="text-sm font-medium text-teal-800 dark:text-teal-200">{project.impact}</p>
-                        </div>
+                    <div className="space-y-4">
+                      <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+                        <p className="text-sm font-medium text-teal-800 dark:text-teal-200">
+                          {project.impact}
+                        </p>
+                      </div>
 
                       <div className="flex flex-wrap gap-2">
                         {project.skills.slice(0, 3).map((skill, i) => (
@@ -396,11 +519,14 @@ export default function Projects() {
             <CardContent className="p-12 space-y-8">
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-3xl font-bold">
-                  Interested in My <span className="gradient-text">Design Process?</span>
+                  Interested in My{" "}
+                  <span className="gradient-text">Design Process?</span>
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                  Each project tells a unique story of challenges overcome and solutions crafted. I'd love to walk you
-                  through my detailed case studies and share how I can help bring your vision to life.
+                  Each project tells a unique story of challenges overcome and
+                  solutions crafted. I'd love to walk you through my detailed
+                  case studies and share how I can help bring your vision to
+                  life.
                 </p>
               </div>
 
@@ -432,5 +558,5 @@ export default function Projects() {
         </section>
       </ScrollAnimation>
     </div>
-  )
+  );
 }
