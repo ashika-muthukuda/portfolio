@@ -36,7 +36,10 @@ export default function Projects() {
       category: "Food & Beverage • Web Designs",
       overview:
         "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      resources: [],
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
       colors: ["Pink", "purple", "green with white accents"],
       images: [imgp11, imgp12, imgp13, imgp14],
       icon: Monitor,
@@ -67,21 +70,10 @@ export default function Projects() {
       category: "Food & Beverage • Web Designs",
       overview:
         "A refreshing and vibrant Figma design for a smoothie bar menu, 'Juicy Smoothie Bar'. This template features a sleek layout showcasing four delicious flavors: Blueberry Bliss, Mango Magic, Avocado Dream, and Strawberry Spark. Each section includes vibrant imagery, flavor descriptions, and a call-to-action, all set against a modern color scheme. Perfect for beverage websites, menus, or promotional materials. Ideal for designers, food businesses, or health enthusiasts. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      resources: [],
-      colors: ["Purple, orange, green, and pink with white accents"],
-      images: [imgp31],
-      icon: Monitor,
-      color: "from-emerald-500 to-teal-500",
-      featured: true,
-      year: "2025",
-      link: "#",
-    },
-    {
-      name: "Juicy Smoothie Bar - Beverage Menu Design",
-      category: "Food & Beverage • Web Designs",
-      overview:
-        "A refreshing and vibrant Figma design for a smoothie bar menu, 'Juicy Smoothie Bar'. This template features a sleek layout showcasing four delicious flavors: Blueberry Bliss, Mango Magic, Avocado Dream, and Strawberry Spark. Each section includes vibrant imagery, flavor descriptions, and a call-to-action, all set against a modern color scheme. Perfect for beverage websites, menus, or promotional materials. Ideal for designers, food businesses, or health enthusiasts. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      resources: [],
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
       colors: ["Purple, orange, green, and pink with white accents"],
       images: [imgp31],
       icon: Monitor,
@@ -95,7 +87,8 @@ export default function Projects() {
       category: "Education • Web Designs",
       overview:
         "A sleek and engaging Figma design for 'QuizOne', a learning and quiz platform. This template features a modern layout with a vibrant purple color scheme accented by crisp white elements, creating an inviting and educational environment. Perfect for e-learning websites, quiz apps, or educational tools, it includes sections for courses, quizzes, and progress tracking.",
-      resources: [],
+      resources: [
+      ],
       colors: ["Purple with white accents"],
       images: [imgp41],
       icon: Monitor,
@@ -110,7 +103,10 @@ export default function Projects() {
       category: "Food & Beverage • Web Designs",
       overview:
         "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      resources: ["YouTube tutorials", "Pinterest boards"],
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
       colors: ["Pink", "purple", "green with white accents"],
       images: [imgp31],
       icon: Smartphone,
@@ -216,10 +212,10 @@ export default function Projects() {
                             >
                               {project.category}
                             </Badge>
-                            <h3 className="text-3xl font-bold">
+                            <h3 className="text-2xl font-bold">
                               {project.name}
                             </h3>
-                            <p className="text-xl opacity-90 leading-relaxed text-muted-foreground">
+                            <p className="text-lg opacity-90 leading-relaxed text-muted-foreground">
                               {project.overview}
                             </p>
                           </div>
