@@ -141,7 +141,7 @@ export default function Projects() {
                     <div className="flex flex-col xl:flex-row gap-6">
                       {/* Project Visual */}
                       <div
-                        className={`xl:w-3/5 pr-6 xl:border-r-1 border-muted-foreground/30 flex flex-col justify-center`}
+                        className={`xl:w-3/5 pr-6 border-r-1 border-muted-foreground/30 flex flex-col justify-center`}
                       >
                         <div className="space-y-8">
                           <div className="flex items-center justify-between">
@@ -313,7 +313,7 @@ export default function Projects() {
                               <img
                                 src={project.images[0]?.src || project.images[0]}
                                 alt={`${project.name}`}
-                                className="w-full h-auto rounded-xl object-cover hover:scale-102 transition-transform duration-700"
+                                className="w-full h-full rounded-xl object-contain hover:scale-102 transition-transform duration-700"
                               />
                             </div>
                             <div className="grid xl:grid-cols-3 gap-3 xl:w-full w-3/12 ">
