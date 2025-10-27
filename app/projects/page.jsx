@@ -23,6 +23,11 @@ import imgp12 from "../../assets/imgs/img-p12.png";
 import imgp13 from "../../assets/imgs/img-p13.png";
 import imgp14 from "../../assets/imgs/img-p14.png";
 import imgp21 from "../../assets/imgs/img-p21.png";
+import imgp22 from "../../assets/imgs/img-p22.png";
+import imgp23 from "../../assets/imgs/img-p23.png";
+import imgp24 from "../../assets/imgs/img-p24.png";
+import imgp31 from "../../assets/imgs/img-p31.png";
+import imgp41 from "../../assets/imgs/img-p41.png";
 
 export default function Projects() {
   const projects = [
@@ -31,26 +36,73 @@ export default function Projects() {
       category: "Food & Beverage • Web Designs",
       overview:
         "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      role: "Lead UI/UX Designer",
+      resources: [],
       colors: ["Pink", "purple", "green with white accents"],
       images: [imgp11, imgp12, imgp13, imgp14],
-      icon: Smartphone,
+      icon: Monitor,
       color: "from-emerald-500 to-teal-500",
       featured: true,
-      year: "2024",
+      year: "2025",
+      link: "#",
     },
     {
-      name: "Donut Delight - Flavorful Donut Banner Design",
+      name: "Breath Natural - Plant Store Web Design",
+      category: "Plants • Nature • Web Designs",
+      overview:
+        "A modern and visually appealing web design template for an online plant store, 'Breath Natural'. This Figma design features a clean layout with sections for trendy plants, top-selling items, customer reviews, and best collections. Perfect for e-commerce platforms focused on indoor plants and gardening. The design includes a dark theme with vibrant plant imagery, easy navigation, and a responsive structure. Ideal for designers, developers, or plant enthusiasts looking to create a stunning online store. Resources for inspiration include YouTube tutorials and Pinterest boards.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: ["Dark green and white with vibrant accents"],
+      images: [imgp21, imgp22, imgp23, imgp24],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      year: "2025",
+      link: "#",
+    },
+    {
+      name: "Juicy Smoothie Bar - Beverage Menu Design",
       category: "Food & Beverage • Web Designs",
       overview:
-        "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      role: "Lead UI/UX Designer",
-      colors: ["Pink", "purple", "green with white accents"],
-      images: [imgp21, imgp12, imgp13, imgp14],
-      icon: Smartphone,
+        "A refreshing and vibrant Figma design for a smoothie bar menu, 'Juicy Smoothie Bar'. This template features a sleek layout showcasing four delicious flavors: Blueberry Bliss, Mango Magic, Avocado Dream, and Strawberry Spark. Each section includes vibrant imagery, flavor descriptions, and a call-to-action, all set against a modern color scheme. Perfect for beverage websites, menus, or promotional materials. Ideal for designers, food businesses, or health enthusiasts. Inspiration drawn from YouTube tutorials and Pinterest boards.",
+      resources: [],
+      colors: ["Purple, orange, green, and pink with white accents"],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      year: "2025",
+      link: "#",
+    },
+    {
+      name: "Juicy Smoothie Bar - Beverage Menu Design",
+      category: "Food & Beverage • Web Designs",
+      overview:
+        "A refreshing and vibrant Figma design for a smoothie bar menu, 'Juicy Smoothie Bar'. This template features a sleek layout showcasing four delicious flavors: Blueberry Bliss, Mango Magic, Avocado Dream, and Strawberry Spark. Each section includes vibrant imagery, flavor descriptions, and a call-to-action, all set against a modern color scheme. Perfect for beverage websites, menus, or promotional materials. Ideal for designers, food businesses, or health enthusiasts. Inspiration drawn from YouTube tutorials and Pinterest boards.",
+      resources: [],
+      colors: ["Purple, orange, green, and pink with white accents"],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      year: "2025",
+      link: "#",
+    },
+    {
+      name: "Quizone - Learning and Quiz Platform Design",
+      category: "Education • Web Designs",
+      overview:
+        "A sleek and engaging Figma design for 'QuizOne', a learning and quiz platform. This template features a modern layout with a vibrant purple color scheme accented by crisp white elements, creating an inviting and educational environment. Perfect for e-learning websites, quiz apps, or educational tools, it includes sections for courses, quizzes, and progress tracking.",
+      resources: [],
+      colors: ["Purple with white accents"],
+      images: [imgp41],
+      icon: Monitor,
       color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2024",
+      link: "#",
     },
 
     {
@@ -58,13 +110,14 @@ export default function Projects() {
       category: "Food & Beverage • Web Designs",
       overview:
         "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      role: "Lead UI/UX Designer",
+      resources: ["YouTube tutorials", "Pinterest boards"],
       colors: ["Pink", "purple", "green with white accents"],
-      images: [imgp11, imgp12, imgp13, imgp14],
+      images: [imgp31],
       icon: Smartphone,
       color: "from-emerald-500 to-teal-500",
       featured: false,
       year: "2024",
+      link: "#",
     },
   ];
 
@@ -141,7 +194,7 @@ export default function Projects() {
                     <div className="flex flex-col xl:flex-row gap-6">
                       {/* Project Visual */}
                       <div
-                        className={`xl:w-3/5 pr-6 border-r-1 border-muted-foreground/30 flex flex-col justify-center`}
+                        className={`xl:w-3/5 xl:pr-6 xl:border-r-1 border-muted-foreground/30 flex flex-col justify-center`}
                       >
                         <div className="space-y-8">
                           <div className="flex items-center justify-between">
@@ -192,6 +245,22 @@ export default function Projects() {
                               ))}
                             </div>
                           </div>
+
+                          {project.resources.length > 0 && (
+                            <div className="space-y-1">
+                              <h4 className="font-semibold text-teal-600">
+                                Resources:
+                              </h4>
+                              <div className="flex-wrap">
+                                {project.resources.map((resource, i) => (
+                                  <p key={i} className="text-muted-foreground">
+                                    {"• "}
+                                    {resource}
+                                  </p>
+                                ))}
+                              </div>
+                            </div>
+                          )}
 
                           <Button
                             variant="outline"
@@ -308,15 +377,17 @@ export default function Projects() {
                           <h4 className="font-semibold text-teal-600">
                             Preview:
                           </h4>
-                          <div className="xl:space-y-3 xl:flex-col flex gap-3">
-                            <div className="xl:w-full w-9/12 bg-cover bg-center" style={{ backgroundImage: `url(${project.images[0]})` }}>
+                          <div className="space-y-3 flex-col border-1 border-muted-foreground/50 p-3 rounded-xl">
+                            <div className="w-full">
                               <img
-                                src={project.images[0]?.src || project.images[0]}
+                                src={
+                                  project.images[0]?.src || project.images[0]
+                                }
                                 alt={`${project.name}`}
-                                className="w-full h-full rounded-xl object-contain hover:scale-102 transition-transform duration-700"
+                                className="w-full h-auto rounded-xl object-cover hover:scale-102 transition-transform duration-700"
                               />
                             </div>
-                            <div className="grid xl:grid-cols-3 gap-3 xl:w-full w-3/12 ">
+                            <div className="grid grid-cols-3 gap-3 w-full">
                               {project.images.slice(1).map((src, i) => (
                                 <div
                                   key={i}
@@ -326,7 +397,7 @@ export default function Projects() {
                                   <img
                                     src={src?.src || src}
                                     alt={`${project.name} screenshot ${i + 2}`}
-                                    className="w-full h-fit object-fill hover:scale-110 transition-transform duration-300"
+                                    className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300"
                                   />
                                 </div>
                               ))}
