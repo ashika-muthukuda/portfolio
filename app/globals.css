@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* Removed malformed `@custom-variant` line that caused a build/parsing error.
+  If you need a custom variant for dark mode, re-add it with correct syntax
+  or configure it via the Tailwind/PostCSS plugin configuration. */
 
 :root {
   --background: oklch(1 0 0);
