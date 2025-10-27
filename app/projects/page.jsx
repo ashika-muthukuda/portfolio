@@ -18,7 +18,11 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-import imgp11 from '../../assets/imgs/img-p11.png';
+import imgp11 from "../../assets/imgs/img-p11.png";
+import imgp12 from "../../assets/imgs/img-p12.png";
+import imgp13 from "../../assets/imgs/img-p13.png";
+import imgp14 from "../../assets/imgs/img-p14.png";
+import imgp21 from "../../assets/imgs/img-p21.png";
 
 export default function Projects() {
   const projects = [
@@ -29,168 +33,38 @@ export default function Projects() {
         "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
       role: "Lead UI/UX Designer",
       colors: ["Pink", "purple", "green with white accents"],
-      thumnailImage: imgp11 ,
-      duration: "4 months",
-      team: "Product Manager, 2 Developers, Data Scientist",
-      highlights:
-        "Intuitive health data visualization, gamified wellness challenges, and accessible design for all age groups.",
-      impact:
-        "40% increase in daily active users, 60% improvement in health goal completion rates",
-      metrics: {
-        users: "50K+",
-        rating: "4.8/5",
-        retention: "85%",
-      },
-      colors: ["Emerald", "Teal"],
-      skills: [
-        "Mobile Design",
-        "Health UX",
-        "Data Visualization",
-        "Accessibility",
-        "User Research",
-      ],
+      images: [imgp11, imgp12, imgp13, imgp14],
       icon: Smartphone,
       color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2024",
     },
     {
-      name: "EcoShop Redesign",
-      category: "E-commerce • Web Platform",
+      name: "Donut Delight - Flavorful Donut Banner Design",
+      category: "Food & Beverage • Web Designs",
       overview:
-        "Complete redesign of a sustainable fashion e-commerce platform, focusing on storytelling and environmental impact visualization.",
-      role: "Senior UI/UX Designer",
-      duration: "6 months",
-      team: "Creative Director, Frontend Developer, Marketing Team",
-      highlights:
-        "Sustainable product storytelling, carbon footprint calculator, and seamless checkout experience.",
-      impact:
-        "65% increase in conversion rate, 45% boost in average order value",
-      metrics: {
-        conversion: "+65%",
-        revenue: "+120%",
-        satisfaction: "96%",
-      },
-      colors: ["Green", "Emerald"],
-      skills: [
-        "E-commerce UX",
-        "Sustainability Design",
-        "Conversion Optimization",
-        "Brand Design",
-      ],
-      icon: ShoppingBag,
-      color: "from-green-500 to-emerald-500",
+        "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
+      role: "Lead UI/UX Designer",
+      colors: ["Pink", "purple", "green with white accents"],
+      images: [imgp21, imgp12, imgp13, imgp14],
+      icon: Smartphone,
+      color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2024",
     },
+
     {
-      name: "DataViz Dashboard",
-      category: "Enterprise • Analytics Platform",
+      name: "Donut Delight - Flavorful Donut Banner Design",
+      category: "Food & Beverage • Web Designs",
       overview:
-        "Enterprise analytics dashboard for financial services, providing real-time insights and customizable reporting tools.",
-      role: "UI/UX Designer",
-      duration: "8 months",
-      team: "Product Owner, 3 Developers, Business Analyst",
-      highlights:
-        "Complex data simplification, customizable widgets, and role-based access controls.",
-      impact:
-        "50% reduction in report generation time, 35% increase in user adoption",
-      metrics: {
-        efficiency: "+50%",
-        adoption: "+35%",
-        accuracy: "99.2%",
-      },
-      colors: ["Teal", "Cyan"],
-      skills: [
-        "Enterprise UX",
-        "Data Visualization",
-        "Dashboard Design",
-        "B2B UX",
-      ],
-      icon: BarChart3,
-      color: "from-teal-500 to-cyan-500",
-      featured: false,
-      year: "2023",
-    },
-    {
-      name: "ConnectLocal Social",
-      category: "Social • Community Platform",
-      overview:
-        "Social networking platform designed to connect local communities and promote neighborhood engagement.",
-      role: "Lead Designer",
-      duration: "5 months",
-      team: "Startup Founder, Full-stack Developer, Community Manager",
-      highlights:
-        "Location-based networking, event discovery, and community-driven content moderation.",
-      impact:
-        "10K+ active community members, 200+ local events organized monthly",
-      metrics: {
-        communities: "150+",
-        events: "200+/mo",
-        engagement: "78%",
-      },
-      colors: ["Emerald", "Teal"],
-      skills: [
-        "Social UX",
-        "Community Design",
-        "Mobile-first Design",
-        "Location Services",
-      ],
-      icon: Users,
+        "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
+      role: "Lead UI/UX Designer",
+      colors: ["Pink", "purple", "green with white accents"],
+      images: [imgp11, imgp12, imgp13, imgp14],
+      icon: Smartphone,
       color: "from-emerald-500 to-teal-500",
       featured: false,
-      year: "2023",
-    },
-    {
-      name: "FitTrack Pro",
-      category: "Fitness • Mobile App",
-      overview:
-        "Comprehensive fitness tracking app with AI-powered workout recommendations and social challenges.",
-      role: "UI/UX Designer",
-      duration: "3 months",
-      team: "Product Manager, iOS Developer, Fitness Expert",
-      highlights:
-        "Gamified workout experience, social challenges, and personalized fitness plans.",
-      impact: "70% user retention after 3 months, 4.9 App Store rating",
-      metrics: {
-        retention: "70%",
-        rating: "4.9/5",
-        workouts: "1M+",
-      },
-      colors: ["Emerald", "Teal"],
-      skills: ["Fitness UX", "Gamification", "Social Features", "iOS Design"],
-      icon: Monitor,
-      color: "from-orange-500 to-red-500",
-      featured: false,
-      year: "2022",
-    },
-    {
-      name: "PhotoPro Portfolio",
-      category: "Creative • Portfolio Platform",
-      overview:
-        "Portfolio platform specifically designed for professional photographers to showcase their work and attract clients.",
-      role: "Freelance Designer",
-      duration: "2 months",
-      team: "Photographer, Web Developer",
-      highlights:
-        "Image-focused layouts, client proofing system, and integrated booking functionality.",
-      impact: "300% increase in client inquiries, featured in design galleries",
-      metrics: {
-        inquiries: "+300%",
-        bookings: "+250%",
-        satisfaction: "100%",
-      },
-      colors: ["Pink", "Purple", "White"],
-      skills: [
-        "Portfolio Design",
-        "Photography UX",
-        "Client Experience",
-        "Visual Hierarchy",
-      ],
-      icon: Camera,
-      color: "from-emerald-500 to-teal-500",
-      featured: false,
-      year: "2022",
+      year: "2024",
     },
   ];
 
@@ -263,11 +137,11 @@ export default function Projects() {
             {featuredProjects.map((project, index) => (
               <ScrollAnimation key={index} delay={index * 200}>
                 <Card className="border-0 overflow-hidden gradient-bg-soft card-hover">
-                  <CardContent className="px-6">
-                    <div className="flex flex-col xl:flex-row">
+                  <CardContent className="">
+                    <div className="flex flex-col xl:flex-row gap-6">
                       {/* Project Visual */}
                       <div
-                        className={`xl:w-3/5 p-12 rounded-lg border-1 border-muted-foreground/30 flex flex-col justify-center`}
+                        className={`xl:w-3/5 pr-6 xl:border-r-1 border-muted-foreground/30 flex flex-col justify-center`}
                       >
                         <div className="space-y-8">
                           <div className="flex items-center justify-between">
@@ -304,21 +178,24 @@ export default function Projects() {
                               </div>
                             ))}
                           </div> */}
-                          <div className="space-y-0 flex gap-3">
+                          {/* hide div in mobile view */}
+                          <div className="space-y-1 xl:hidden">
                             <h4 className="font-semibold text-teal-600">
                               Color Scheme:
                             </h4>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-3">
                               {project.colors.map((skill, i) => (
                                 <p key={i} className="text-muted-foreground">
+                                  {"• "}
                                   {skill}
                                 </p>
                               ))}
                             </div>
                           </div>
+
                           <Button
                             variant="outline"
-                            className="hover:scale-105 transition-all duration-300 bg-transparent group"
+                            className="hover:scale-105 transition-all duration-300 bg-transparent group border-1  "
                           >
                             View Prototype
                             <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
@@ -327,8 +204,8 @@ export default function Projects() {
                       </div>
 
                       {/* Project Details */}
-                      <div className="xl:w-2/5 p-12 space-y-8">
-                        <div className="grid md:grid-cols-2 gap-6">
+                      <div className="xl:w-2/5 p-0 space-y-8">
+                        {/* <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <h4 className="font-semibold text-teal-600 mb-2 flex items-center gap-2">
                               <Target className="w-4 h-4" />
@@ -413,14 +290,50 @@ export default function Projects() {
                             Live Demo
                             <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
                           </Button>
-                        </div><img
-                        src="assets/imgs/img-p11.png"
-                        alt={project.name}
-                        className="w-full h-auto rounded-lg"
-                      />
+                        </div> */}
+                        <div className="space-y-1 xl:block hidden">
+                          <h4 className="font-semibold text-teal-600">
+                            Color Scheme:
+                          </h4>
+                          <div className="flex flex-wrap gap-3">
+                            {project.colors.map((skill, i) => (
+                              <p key={i} className="text-muted-foreground">
+                                {"• "}
+                                {skill}
+                              </p>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="space-y-3">
+                          <h4 className="font-semibold text-teal-600">
+                            Preview:
+                          </h4>
+                          <div className="xl:space-y-3 xl:flex-col flex gap-3">
+                            <div className="xl:w-full w-9/12 bg-cover bg-center" style={{ backgroundImage: `url(${project.images[0]})` }}>
+                              <img
+                                src={project.images[0]?.src || project.images[0]}
+                                alt={`${project.name}`}
+                                className="w-full h-auto rounded-xl object-cover hover:scale-102 transition-transform duration-700"
+                              />
+                            </div>
+                            <div className="grid xl:grid-cols-3 gap-3 xl:w-full w-3/12 ">
+                              {project.images.slice(1).map((src, i) => (
+                                <div
+                                  key={i}
+                                  // onClick={() => setSelectedImage(src)}
+                                  className="overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
+                                >
+                                  <img
+                                    src={src?.src || src}
+                                    alt={`${project.name} screenshot ${i + 2}`}
+                                    className="w-full h-fit object-fill hover:scale-110 transition-transform duration-300"
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
                       </div>
-
-                      
                     </div>
                   </CardContent>
                 </Card>
@@ -471,19 +384,37 @@ export default function Projects() {
                       <p className="text-muted-foreground leading-relaxed text-sm">
                         {project.overview}
                       </p>
-                      <p className="text-xs text-teal-600 font-medium">
-                        {project.role} • {project.duration}
-                      </p>
+                      <div className="space-y-2">
+                        <p className="text-xs text-teal-600 font-medium">
+                          Color Scheme:
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {project.colors.slice(0, 3).map((color, i) => (
+                            <Badge
+                              key={i}
+                              variant="outline"
+                              className="text-xs"
+                            >
+                              {color}
+                            </Badge>
+                          ))}
+                          {project.colors.length > 3 && (
+                            <Badge variant="outline" className="text-xs">
+                              +{project.colors.length - 3} more
+                            </Badge>
+                          )}
+                        </div>
+                      </div>
                     </div>
 
                     <div className="space-y-4">
-                      <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+                      {/* <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
                         <p className="text-sm font-medium text-teal-800 dark:text-teal-200">
                           {project.impact}
                         </p>
-                      </div>
+                      </div> */}
 
-                      <div className="flex flex-wrap gap-2">
+                      {/* <div className="flex flex-wrap gap-2">
                         {project.skills.slice(0, 3).map((skill, i) => (
                           <Badge key={i} variant="outline" className="text-xs">
                             {skill}
@@ -494,13 +425,13 @@ export default function Projects() {
                             +{project.skills.length - 3} more
                           </Badge>
                         )}
-                      </div>
+                      </div> */}
 
                       <Button
                         variant="ghost"
-                        className="w-full justify-between group-hover:bg-primary/10 transition-colors"
+                        className=" justify-between group-hover:bg-primary/10 transition-colors"
                       >
-                        View Details
+                        View Prototype
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </Button>
                     </div>
