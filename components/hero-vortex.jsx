@@ -23,7 +23,7 @@ export default function HeroVortex() {
               className="text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-3 mb-4 sm:mb-6 
                          bg-black/10 dark:bg-white/10 
                          backdrop-blur-sm 
-                         text-black dark:text-white 
+                         text-foreground 
                          border border-black/20 dark:border-white/20 
                          hover:bg-black/20 dark:hover:bg-white/20 
                          transition-all duration-300"
@@ -36,7 +36,7 @@ export default function HeroVortex() {
           {/* Main Heading */}
           <div className="space-y-4 sm:space-y-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight 
-                           text-black dark:text-white transition-colors duration-500">
+                           text-foreground transition-colors duration-500">
               Crafting Digital
               <br />
               <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
@@ -44,7 +44,7 @@ export default function HeroVortex() {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl 
-                          text-black/70 dark:text-white/80 
+                          text-foreground/70 
                           max-w-4xl mx-auto leading-relaxed font-light px-4 transition-colors duration-500">
               I'm Ashika Muthukuda, a passionate UI/UX designer who transforms complex ideas into intuitive, visually stunning
               digital experiences that users love and businesses thrive on.
@@ -56,7 +56,7 @@ export default function HeroVortex() {
             <Button
               asChild
               size="lg"
-              className="bg-black text-white dark:bg-white dark:text-black 
+              className=" 
                          hover:bg-black/90 dark:hover:bg-white/90 
                          transition-all duration-300 hover:scale-105 group px-6 sm:px-8 py-3 sm:py-4 
                          text-base sm:text-lg font-semibold w-full sm:w-auto"
@@ -71,7 +71,7 @@ export default function HeroVortex() {
               variant="outline"
               size="lg"
               className="border-black/30 dark:border-white/30 
-                         text-black dark:text-white 
+                         text-foreground 
                          hover:bg-black/10 dark:hover:bg-white/10 
                          backdrop-blur-sm transition-all duration-300 
                          hover:scale-105 group px-6 sm:px-8 py-3 sm:py-4 
@@ -104,8 +104,8 @@ export default function HeroVortex() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-5 sm:w-6 h-8 sm:h-10 border-2 border-black/30 dark:border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-2 sm:h-3 bg-black/50 dark:bg-white/50 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-5 sm:w-6 h-8 sm:h-10 border-2 border-foreground/30 rounded-full flex justify-center">
+            <div className="w-1 h-2 sm:h-3 bg-foreground/50 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </Vortex>
