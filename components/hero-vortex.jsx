@@ -13,7 +13,7 @@ export default function HeroVortex() {
         rangeY={800}
         particleCount={100}
         baseHue={170} /* shifted to teal/emerald */
-        className="flex items-center flex-col justify-center px-4 sm:px-6 md:px-10 py-4 w-full h-full"
+        className="flex items-center flex-col justify-center px-4 sm:px-6 md:px-10 py-4 w-full h-auto"
       >
         <div className="relative z-10 text-center space-y-6 sm:space-y-8 max-w-5xl mx-auto">
           {/* Availability Badge */}
@@ -29,7 +29,7 @@ export default function HeroVortex() {
                          transition-all duration-300"
             >
               <div className="w-2 h-2 bg-green-500 rounded-full mr-2 sm:mr-3 animate-pulse"></div>
-              Available for new projects
+              Open to learning opportunities & collaborative projects
             </Badge>
           </div>
 
@@ -46,8 +46,7 @@ export default function HeroVortex() {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl 
                           text-foreground/70 
                           max-w-4xl mx-auto leading-relaxed font-light px-4 transition-colors duration-500">
-              I'm Ashika Muthukuda, a passionate UI/UX designer who transforms complex ideas into intuitive, visually stunning
-              digital experiences that users love and businesses thrive on.
+              I am an undergraduate UI/UX & graphic design student passionate about transforming ideas into intuitive digital experiences.
             </p>
           </div>
 
@@ -103,7 +102,7 @@ export default function HeroVortex() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="left-1/2 transform -translate-x-1/2 animate-bounce mt-20">
           <div className="w-5 sm:w-6 h-8 sm:h-10 border-2 border-foreground/30 rounded-full flex justify-center">
             <div className="w-1 h-2 sm:h-3 bg-foreground/50 rounded-full mt-2 animate-pulse"></div>
           </div>

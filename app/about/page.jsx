@@ -35,7 +35,7 @@ export default function About() {
       title: "Empathy-Driven",
 
       description:
-        "I design with people in mind — understanding user emotions, behaviors, and needs to create human-centered solutions.",
+        "I design with people in mind, understanding user emotions, behaviors, and needs to craft human-centered solutions.",
       color: "from-emerald-500 to-teal-500",
     },
     {
@@ -43,7 +43,7 @@ export default function About() {
       title: "Results-Focused",
 
       description:
-        "Every design decision has a purpose. I focus on clarity, usability, and measurable outcomes that help brands grow.",
+        "Every design choice has a purpose. I prioritize clarity, usability, and outcomes that make digital experiences effective and impactful.",
       color: "from-teal-500 to-cyan-500",
     },
     {
@@ -51,7 +51,7 @@ export default function About() {
       title: "Innovation-Minded",
 
       description:
-        "I love experimenting with new design tools, creative styles, and emerging technologies to build modern, future-ready interfaces.",
+        "I enjoy exploring new tools, creative styles, and emerging technologies to create modern, future-ready interfaces.",
       color: "from-yellow-500 to-orange-500",
     },
   ];
@@ -134,18 +134,21 @@ export default function About() {
               Hi, I'm <span className="gradient-text">Ashika</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              A BSc. (Hons) Software Engineering undergraduate at SLTC Research
-              University and a UI/UX designer with a creative engineering
-              mindset. I specialize in crafting user-centered digital
-              experiences that balance functionality, emotion, and visual
-              appeal. My design philosophy revolves around simplicity, empathy,
-              and innovation — because I believe every design should make
-              technology feel more human and purposeful.
+              I’m a BSc. (Hons) Software Engineering undergraduate at SLTC
+              Research University and a UI/UX designer with a passion for
+              blending creativity and technology. I focus on crafting
+              user-centered digital experiences that balance functionality,
+              emotion, and visual appeal.
               <br />
               <br />
-              Beyond academics, I’m actively involved in creative and leadership
-              roles at SLTC, contributing to projects that combine design,
-              technology, and collaboration.
+              My design philosophy is rooted in simplicity, empathy, and
+              innovation. I believe every design should make technology feel
+              more human, meaningful, and purposeful.
+              <br />
+              <br />
+              Beyond academics, I’m actively engaged in creative and leadership
+              roles at SLTC, contributing to projects that bring together
+              design, technology, and collaboration to create impactful results.
             </p>
           </div>
         </ScrollAnimation>
@@ -159,8 +162,8 @@ export default function About() {
               My Design Philosophy
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              These values shape every design I create and every collaboration I
-              take part in.
+              These values guide every project I create and every collaboration I participate in.
+
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 stagger-children">
@@ -426,8 +429,6 @@ export default function About() {
               ))}
             </div>{" "}
           </div>
-
-         
         </section>
       </ScrollAnimation>
 
@@ -442,57 +443,55 @@ export default function About() {
           </div>
 
           <section className="grid md:grid-cols-2 gap-6">
-                <Card className="border-0 gradient-bg-soft card-hover">
-                  <CardContent className="space-y-3">
-                    <h3 className="text-lg font-semibold">
-                      CodeMania Competition 2025
-                    </h3>
-                    <p className="text-muted-foreground">
-                      Showcased design and problem-solving skills through
-                      interactive UI prototyping.
-                    </p>
-                    <Badge
-                      variant="secondary"
-                      className="bg-green-50 text-green-800 border-0"
-                    >
-                      4th Place
-                    </Badge>
-                  </CardContent>
-                </Card>
-                <Card className="border-0 gradient-bg-soft card-hover">
-                  <CardContent className="space-y-3">
-                    <h3 className="text-lg font-semibold">IEEE IAS SLTC</h3>
+            <Card className="border-0 gradient-bg-soft card-hover">
+              <CardContent className="space-y-3">
+                <h3 className="text-lg font-semibold">
+                  CodeMania Competition 2025
+                </h3>
+                <p className="text-muted-foreground">
+                  Showcased design and problem-solving skills through
+                  interactive UI prototyping.
+                </p>
+                <Badge
+                  variant="secondary"
+                  className="bg-green-50 text-green-800 border-0"
+                >
+                  4th Place
+                </Badge>
+              </CardContent>
+            </Card>
+            <Card className="border-0 gradient-bg-soft card-hover">
+              <CardContent className="space-y-3">
+                <h3 className="text-lg font-semibold">IEEE IAS SLTC</h3>
 
-                    <p className="text-muted-foreground">
-                      Recognized for exceptional contributions to design and
-                      project execution.
-                    </p>
-                    <Badge
-                      variant="secondary"
-                      className="bg-green-50 text-green-800 border-0"
-                    >
-                      IEEE Volunteer of the Month — March & December 2023
-                    </Badge>
-                  </CardContent>
-                </Card>
-                <Card className="border-0 gradient-bg-soft card-hover">
-                  <CardContent className="space-y-3">
-                    <h3 className="text-lg font-semibold">
-                      Master Designer V2.0
-                    </h3>
+                <p className="text-muted-foreground">
+                  Recognized for exceptional contributions to design and project
+                  execution.
+                </p>
+                <Badge
+                  variant="secondary"
+                  className="bg-green-50 text-green-800 border-0"
+                >
+                  IEEE Volunteer of the Month — March & December 2023
+                </Badge>
+              </CardContent>
+            </Card>
+            <Card className="border-0 gradient-bg-soft card-hover">
+              <CardContent className="space-y-3">
+                <h3 className="text-lg font-semibold">Master Designer V2.0</h3>
 
-                    <p className="text-muted-foreground">
-                      Successfully coordinated one of SLTC’s largest all-island
-                      design competitions.{" "}
-                    </p>
-                    <Badge
-                      variant="secondary"
-                      className="bg-green-50 text-green-800 border-0"
-                    >
-                      Project Success{" "}
-                    </Badge>
-                  </CardContent>
-                </Card>
+                <p className="text-muted-foreground">
+                  Successfully coordinated one of SLTC’s largest all-island
+                  design competitions.{" "}
+                </p>
+                <Badge
+                  variant="secondary"
+                  className="bg-green-50 text-green-800 border-0"
+                >
+                  Project Success{" "}
+                </Badge>
+              </CardContent>
+            </Card>
           </section>
         </section>
       </ScrollAnimation>
