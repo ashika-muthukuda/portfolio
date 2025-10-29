@@ -46,7 +46,7 @@ export default function Projects() {
       color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2025",
-      link: "#",
+      link: "https://bit.ly/3J7AHfd",
     },
     {
       name: "Breath Natural - Plant Store Web Design",
@@ -63,7 +63,7 @@ export default function Projects() {
       color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2025",
-      link: "#",
+      link: "https://bit.ly/4qzd6F0",
     },
     {
       name: "Juicy Smoothie Bar - Beverage Menu Design",
@@ -80,22 +80,21 @@ export default function Projects() {
       color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2025",
-      link: "#",
+      link: "https://bit.ly/4qzdljo",
     },
     {
       name: "Quizone - Learning and Quiz Platform Design",
       category: "Education • Web Designs",
       overview:
         "A sleek and engaging Figma design for 'QuizOne', a learning and quiz platform. This template features a modern layout with a vibrant purple color scheme accented by crisp white elements, creating an inviting and educational environment. Perfect for e-learning websites, quiz apps, or educational tools, it includes sections for courses, quizzes, and progress tracking.",
-      resources: [
-      ],
+      resources: [],
       colors: ["Purple with white accents"],
       images: [imgp41],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
       featured: true,
       year: "2024",
-      link: "#",
+      link: "https://bit.ly/4qvmwRI",
     },
 
     {
@@ -258,13 +257,19 @@ export default function Projects() {
                             </div>
                           )}
 
-                          <Button
-                            variant="outline"
-                            className="hover:scale-105 transition-all duration-300 bg-transparent group border-1  "
+                          <Link
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            View Prototype
-                            <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
-                          </Button>
+                            <Button
+                              variant="outline"
+                              className="hover:scale-105 transition-all duration-300 bg-transparent group border-1  "
+                            >
+                              View Prototype
+                              <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
+                            </Button>
+                          </Link>
                         </div>
                       </div>
 

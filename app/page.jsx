@@ -17,6 +17,9 @@ import {
   Award,
   Brush,
   CodeXml,
+  Brain,
+  Leaf,
+  CupSoda,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -42,27 +45,27 @@ export default function Home() {
 
   const recentWorks = [
     {
-      name: "HealthFlow Mobile",
+      name: "Learning and Quiz Platform",
       description:
-        "A comprehensive health tracking app with AI-powered insights, designed for seamless user experience across all devices.",
-      icon: Zap,
+        "A sleek and engaging Figma design for 'QuizOne', a learning and quiz platform.",
+      icon: Brain,
       color: "from-emerald-500 to-teal-500",
       metrics: "50K+ users",
     },
     {
-      name: "EcoShop Redesign",
+      name: "Plant Store Web Landing",
       description:
-        "Complete e-commerce platform redesign focusing on sustainability and user engagement with 40% conversion boost.",
-  icon: Palette,
-  color: "from-emerald-500 to-teal-500",
+        "A modern and visually appealing web design template for an online plant store, 'Breath Natural'.",
+      icon: Leaf,
+      color: "from-emerald-500 to-teal-500",
       metrics: "65% conversion ↑",
     },
     {
-      name: "DataViz Dashboard",
+      name: "Beverage Menu Design",
       description:
-        "Enterprise analytics dashboard with real-time data visualization and intuitive user interface design.",
-  icon: Users,
-  color: "from-teal-500 to-cyan-500",
+        "A refreshing and vibrant Figma design for a smoothie bar menu, 'Juicy Smoothie Bar'.",
+      icon: CupSoda,
+      color: "from-teal-500 to-cyan-500",
       metrics: "99.2% accuracy",
     },
   ];
@@ -124,10 +127,11 @@ export default function Home() {
         <ScrollAnimation>
           <section className="section-spacing">
             <div className="text-center space-y-4 mb-12 sm:mb-16">
-              <h2 className="text-responsive-3xl font-bold">What I Do Best</h2>
+              <h2 className="text-responsive-3xl font-bold">Areas I explore</h2>
               <p className="text-muted-foreground text-responsive-lg max-w-2xl mx-auto">
-                Specialized creative and digital services that bring ideas to
-                life and build lasting connections with users.
+                Dedicated to growing my expertise across creative and digital
+                design and from crafting user experiences to building visual
+                identities. Academic Projects
               </p>
             </div>
 
@@ -160,7 +164,7 @@ export default function Home() {
                             {feature}
                           </Badge>
                         ))}
-                      </div>  
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -209,8 +213,9 @@ export default function Home() {
                 Featured Projects
               </h2>
               <p className="text-muted-foreground text-responsive-lg max-w-2xl mx-auto">
-                Discover how I've helped businesses create meaningful
-                connections with their users.
+                Explore my academic and self-initiated projects that reflect my
+                passion for designing thoughtful and user-centered digital
+                experiences.
               </p>
             </div>
 
@@ -242,10 +247,12 @@ export default function Home() {
                         {work.description}
                       </p>
                     </div>
-                    <div className="flex items-center text-sm text-teal-600 font-medium group-hover:text-teal-700 transition-colors">
-                      View Case Study
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                    <Link href="/projects">
+                      <div className="flex items-center text-sm text-teal-600 font-medium group-hover:text-teal-700 transition-colors">
+                        View Case Study
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}
@@ -254,9 +261,14 @@ export default function Home() {
             <div className="flex justify-center align-middle">
               <Button
                 asChild
-                size="lg"
                 variant="outline"
-                className="hover:scale-105 transition-all duration-300 bg-transparent group w-full sm:w-auto"
+                size="lg"
+                className="border-black/30 dark:border-white/30 
+                         text-foreground 
+                         hover:bg-black/10 dark:hover:bg-white/10 
+                         backdrop-blur-sm transition-all duration-300 
+                         hover:scale-105 group px-6 sm:px-8 py-3 sm:py-4 
+                         text-base sm:text-lg font-semibold bg-transparent w-full sm:w-auto"
               >
                 <Link href="/projects">
                   View My Work
@@ -277,9 +289,7 @@ export default function Home() {
                 <span className="gradient-text">Amazing Together?</span>
               </h2>
               <p className="text-responsive-xl text-muted-foreground leading-relaxed">
-                Let's transform your ideas into digital experiences that your
-                users will love. I'm currently accepting new projects and would
-                love to hear about yours.
+                Let’s transform ideas into digital experiences that inspire and engage. I’m always open to learning opportunities, collaborations, and creative projects.
               </p>
             </div>
 
