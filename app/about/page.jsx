@@ -13,6 +13,8 @@ import {
   Calendar,
   Palette,
   Camera,
+  Users,
+  BookOpen,
 } from "lucide-react";
 
 export default function About() {
@@ -73,19 +75,22 @@ export default function About() {
 
   const personalInterests = [
     {
-      icon: Palette,
-      label: "Artist at Heart",
-      description: "sketching and digital painting keep my creativity flowing.",
-    },
-    {
-      icon: MapPin,
-      label: "Nature Explorer",
-      description: "I find clarity in hiking and outdoor adventures.",
-    },
-    {
       icon: Camera,
-      label: "Photographer",
-      description: "capturing light, texture, and emotion in everyday life.",
+      label: "Photography & Exploration",
+      description:
+        "I love capturing moments and finding beauty in everyday scenes, which helps me see design from new perspectives.",
+    },
+    {
+      icon: Users,
+      label: "Teamwork & Collaboration",
+      description:
+        "I enjoy contributing to university and community projects that bring creative and technical minds together.",
+    },
+    {
+      icon: BookOpen,
+      label: "Learning & Growth",
+      description:
+        "I’m always exploring new tools, design trends and technologies to expand my creative thinking and stay inspired.",
     },
   ];
 
@@ -161,9 +166,9 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold">
               My Design Philosophy
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              These values guide every project I create and every collaboration I participate in.
-
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              These values guide every project I create and every collaboration
+              I participate in.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 stagger-children">
@@ -201,7 +206,7 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold">
               What I Bring to the Table
             </h2>
-            <p className="text-muted-foreground text-lg px-80">
+            <p className="text-muted-foreground text-lg xl:px-80">
               A blend of technical knowledge and design expertise built through
               hands-on experience and leadership roles in university
               organizations and creative projects.
@@ -449,14 +454,14 @@ export default function About() {
                   CodeMania Competition 2025
                 </h3>
                 <p className="text-muted-foreground">
-                  Showcased design and problem-solving skills through
-                  interactive UI prototyping.
+                  Showcased strong problem-solving and coding skills through
+                  innovative solutions developed during the hackathon.
                 </p>
                 <Badge
                   variant="secondary"
                   className="bg-green-50 text-green-800 border-0"
                 >
-                  4th Place
+                  Achieved 4th Place
                 </Badge>
               </CardContent>
             </Card>
@@ -465,8 +470,8 @@ export default function About() {
                 <h3 className="text-lg font-semibold">IEEE IAS SLTC</h3>
 
                 <p className="text-muted-foreground">
-                  Recognized for exceptional contributions to design and project
-                  execution.
+                  Honored for exceptional dedication and creative impact in
+                  design and project initiatives.
                 </p>
                 <Badge
                   variant="secondary"
@@ -481,14 +486,14 @@ export default function About() {
                 <h3 className="text-lg font-semibold">Master Designer V2.0</h3>
 
                 <p className="text-muted-foreground">
-                  Successfully coordinated one of SLTC’s largest all-island
-                  design competitions.{" "}
+                  Successfully coordinated one of SLTC’s largest and all-island
+                  design competition.
                 </p>
                 <Badge
                   variant="secondary"
                   className="bg-green-50 text-green-800 border-0"
                 >
-                  Project Success{" "}
+                  Successfully Completed Project
                 </Badge>
               </CardContent>
             </Card>
@@ -545,11 +550,11 @@ export default function About() {
                   Beyond the Pixels
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                  When I’m not designing, you’ll find me sketching concepts,
-                  enjoying nature walks, or experimenting with photography. I
-                  believe inspiration is everywhere, in colors, people, and
-                  stories. These little experiences spark new ideas and help me
-                  create designs that are authentic, emotional, and human.
+                  When I’m not designing, I love sketching ideas, exploring
+                  nature and experimenting with photography. I find inspiration
+                  in everyday moments, in colors, people and stories. These
+                  experiences spark new ideas and help me craft designs that
+                  feel authentic, emotional and deeply human.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-3">

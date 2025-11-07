@@ -15,7 +15,7 @@ export default function HeroVortex() {
         baseHue={170} /* shifted to teal/emerald */
         className="flex items-center flex-col justify-center px-4 sm:px-6 md:px-10 py-4 w-full h-auto"
       >
-        <div className="relative z-10 text-center space-y-6 sm:space-y-8 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center space-y-6 sm:space-y-8 max-w-5xl mx-auto my-20">
           {/* Availability Badge */}
           <div className="inline-block animate-float">
             <Badge
