@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollAnimation } from "@/components/scroll-animation";
@@ -10,138 +12,149 @@ import {
   Rocket,
   Calendar,
   MapPin,
+  X,
 } from "lucide-react";
 
+import imgw11 from "../../assets/imgs/img-w11.jpeg";
+import imgw12 from "../../assets/imgs/img-w12.jpeg";
+import imgw13 from "../../assets/imgs/img-w13.jpeg";
+import imgw21 from "../../assets/imgs/img-w21.jpeg";
+import imgw22 from "../../assets/imgs/img-w22.jpeg";
+import imgw31 from "../../assets/imgs/img-w31.jpeg";
+
+import Image from "next/image";
+import { useState } from "react";
+
 export default function Work() {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const closeModal = () => setSelectedImage(null);
+
   const workExperience = [
     {
-      title: "UI/UX Designer & Creative Technologist",
-      company: "Freelance",
+      title: "Graphic Designer",
+      company: "Isuru Curation (Pvt) Ltd",
       period: "2023 - Present",
-      type: "Freelance",
+      type: "Full-Time",
       color: "from-green-500 to-teal-500",
       description:
-        "Designing user-centered digital experiences for individuals and small businesses, focusing on clean interfaces and intuitive interactions.",
+        "During my time as a designer at Isuru Curation (Pvt) Ltd, I gained hands-on experience in delivering creative projects across print and digital media. I collaborated closely with clients and team members, contributing to innovative solutions while refining my design and project management skills.",
       achievements: [
-        "Designed responsive web interfaces and brand identities for 15+ clients across various industries",
-        "Improved usability and visual consistency in multiple startup projects",
-        "Created wireframes, prototypes, and user flows aligning with client goals",
-        "Enhanced accessibility and inclusivity in product design",
+        "Utilized Adobe Photoshop, Illustrator, InDesign, and CorelDRAW to design a wide range of creative materials.",
+        "Created book covers, wedding cards, social media posts, banners, flyers, and other print and digital content.",
+        "Collaborated closely with clients and team members to deliver visually engaging and high-quality designs.",
+        "Assisted in conceptualizing creative ideas and layouts for various design projects.",
       ],
       skills: [
-        "Figma",
-        "User Research",
-        "Prototyping",
-        "Visual Design",
-        "Accessibility",
-        "Responsive Design",
+        "Adobe Photoshop",
+        "Illustrator",
+        "InDesign",
+        "CorelDRAW",
+        "Visual Design & Branding",
+        "Print & Digital Media Design",
+        "Layout & Typography",
+        "Concept Development & Creative Ideation",
+        "Client Collaboration & Communication",
+        "Time Management & Project Execution",
       ],
-  icon: Briefcase,
-  color: "from-teal-500 to-cyan-500",
-    },
-    {
-      title: "Lead Designer – DroneU Project",
-      company: "IEEE Industry Applications Society (IAS), SLTC",
-      period: "2024",
-      type: "Project",
-      location: "SLTC",
-      description:
-        "Led all creative and design aspects of the DroneU project, developing a consistent and futuristic visual identity that elevated the event's professional appeal.",
-      achievements: [
-        "Designed complete event branding, social media assets, and presentation materials",
-        "Collaborated with engineering and marketing teams to maintain design coherence",
-        "Increased participant engagement by 40% through visually appealing digital promotions",
-      ],
-      skills: [
-        "Branding",
-        "Event Design",
-        "UI Composition",
-        "Team Collaboration",
-      ],
-  icon: Rocket,
-  color: "from-emerald-500 to-teal-500",
-    },
-    {
-      title: "Secretary & Lead Designer",
-      company: "Media Unit, SLTC",
-      period: "2024",
-      type: "Project",
-      location: "SLTC",
-      description:
-        "Served as project secretary and design head for the Master Designer V2.0 All-Island Graphic Design Competition, managing over 120 participants and producing all visual and digital media content.",
-      achievements: [
-        "Designed the event logo, posters, and promotional materials",
-        "Streamlined participant submissions and visual judging formats",
-        "Helped achieve record participation and strong online visibility",
-      ],
-      skills: [
-        "Graphic Design",
-        "Visual Identity",
-        "Project Coordination",
-        "Adobe Creative Suite",
-      ],
-  icon: Building,
-  color: "from-emerald-500 to-teal-500",
-    },
-    {
-      title: "Design Team Deputy Head",
-      company: "Media Unit, SLTC",
-      period: "2023 - 2024",
-      type: "Leadership",
-      location: "SLTC",
-      description:
-        "Supported the creative direction of university events, digital media, and campaigns while mentoring junior designers.",
-      achievements: [
-        "Oversaw design content for 10+ university-level projects",
-        "Trained junior members on Photoshop and Illustrator",
-        "Ensured branding consistency across all student media channels",
-      ],
-      skills: [
-        "Mentoring",
-        "Leadership",
-        "Adobe Illustrator",
-        "Photoshop",
-        "Layout Design",
-      ],
-      icon: Users,
-      color: "from-green-500 to-teal-500",
+      icon: Briefcase,
+      color: "from-emerald-500 to-teal-500",
     },
   ];
 
   const volunteering = [
     {
-      title: "Public Visibility Sub-Committee Head",
-      organization: "IEEE IAS, SLTC",
-      period: "2023 - 2024",
+      title: "Webmaster | Committee Head | Member",
+      organization: "IEEE Industry Applications Society of SLTC",
+      period: "Sep 2022 - Aug 2025",
       description:
-        "Managed creative visibility campaigns, social media graphics, and event branding to increase community engagement.",
-      impact: "Reached 10,000+ audience interactions through design-driven communication",
+        "I use design to create a positive impact in my community. As part of the IEEE Industry Applications Society of SLTC, I’ve helped improve its digital presence and engagement. First as a Member (2022–2023), then as Committee Head (2023–2024), and now as Webmaster (2024–2025).",
       projects: [
-        "Social Media Campaigns",
-        "Event Branding",
-        "Community Engagement",
+        {
+          topic: "Project Advisory – Venturify’24",
+          time: "Apr 2024 – Oct 2024",
+          image: imgw11,
+          desc: "Served as part of the advisory panel, providing design-focused guidance for Venturify’24, a collaborative project between SLTC and SLIIT. Supported the development of creative materials for workshops conducted both online and in-person for entrepreneurs.",
+        },
+        {
+          topic: "Design Team Lead – InnovMind V2.0",
+          time: "Jan 2024 – Aug 2024",
+          image: imgw12,
+          desc: "Led the design team in creating all visual materials, including flyers and presentations. Managed the project’s social media presence and supported event coordination to ensure a successful outcome.",
+        },
+        {
+          topic: "Design Team Member – TechnoMind",
+          time: "Oct 2022 – Nov 2023",
+          image: imgw13,
+          desc: "Contributed as a design team member for TechnoMind, a two-day collaborative initiative between SEDS SLTC and IEEE IAS SLTC. Created promotional materials and provided design support throughout the event and my first university project experience.",
+        },
+      ],
+      skills: [
+        "Team Leadership",
+        "Creative Direction",
+        "Collaboration & Communication",
+        "Event Branding & Visual Strategy",
+        "Time & Project Management",
       ],
       icon: Heart,
       color: "from-emerald-500 to-teal-500",
     },
     {
-      title: "Design Mentor",
-      organization: "SLTC Design Circle",
-      period: "2024 - Present",
+      title: "Secretary | Committee Deputy Head | Member",
+      organization: "Media Unit of SLTC Research University",
+      period: "Oct 2022 - Present",
       description:
-        "Guiding junior designers in developing their creative portfolios, improving design fundamentals, and building confidence in UI/UX design principles.",
-      impact: "Mentored 20+ students through one-on-one guidance and design review sessions",
+        "As part of the Media Unit of SLTC Research University, I’ve grown through several roles. I’ve grown from a Member (2022–2023) to Committee Deputy (2023–2025) and finally served as Secretary (May 2025 – Nov 2025). During this journey, I contributed to managing media operations, leading design initiatives, and supporting creative communication efforts that strengthened the university’s media presence.",
       projects: [
-        "Portfolio Reviews",
-        "Design Fundamentals",
-        "UI/UX Principles",
+        {
+          topic: "Project Advisory – Vitharka 2025",
+          time: "Jun 2025 – Sep 2025",
+          image: imgw21,
+          desc: "Served on the Advisory Panel for Vitharka 2025, an inter-school island-wide debate competition that encouraged critical thinking, teamwork, and effective communication among students. I provided guidance and creative input to support event planning and overall coordination, helping ensure a meaningful and inspiring experience for participants.",
+        },
+        {
+          topic: "Project Secretary – Master Designer V2.0",
+          time: "Apr 2024 – Jul 2024",
+          image: imgw22,
+          desc: "Served as the Secretary for Master Designer V2.0, an all-island design competition organized by the Media Unit of SLTC Research University. In this role, I supported project coordination, documentation, and communication, ensuring smooth execution and timely completion. I take pride in contributing to the project’s success, which celebrated creativity and design excellence across Sri Lanka.",
+        },
       ],
-      icon: Users,
+      skills: [
+        "Leadership & Coordination",
+        "Project Planning",
+        "Communication",
+        "Creative Direction",
+        "Team Collaboration",
+        "Event Management",
+        "Problem-Solving",
+      ],
+      icon: Heart,
+      color: "from-emerald-500 to-teal-500",
+    },
+    {
+      title: "Assistant Secretary",
+      organization: "SEDS SLTC",
+      period: "Jul 2024 – Oct 2025",
+      description:
+        "I believe in using design and creativity to make a positive impact in my community. As the Assistant Secretary of SEDS SLTC (Jul 2024 – Oct 2025), I contribute to organizing events, managing communication, and supporting initiatives that inspire students to explore innovation and space science through design and teamwork.",
+      projects: [
+        {
+          topic: "Project Advisory – Stargaze’24",
+          time: "Aug 2024 – Nov 2024",
+          image: imgw31,
+          desc: "Served as a Project Advisory Panel member for Stargaze’24, an inter-university competition that celebrated creativity, teamwork, and space science. I provided guidance on design and coordination to ensure a smooth event experience and a strong visual impact.",
+        },
+      ],
+      skills: [
+        "Creative Direction",
+        "Project Coordination",
+        "Team Collaboration",
+        "Event Branding",
+        "Leadership & Mentoring",
+      ],
+      icon: Heart,
       color: "from-emerald-500 to-teal-500",
     },
   ];
-
-  
 
   return (
     <div className="container mx-auto px-4 py-8 space-y-20">
@@ -153,8 +166,9 @@ export default function Work() {
               My Professional <span className="gradient-text">Journey</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              From a passionate learner to a creative design professional, my journey has been all about 
-              blending creativity, technology, and user empathy to craft meaningful digital experiences.
+              From a passionate learner to a creative design professional, my
+              journey has been all about blending creativity, technology, and
+              user empathy to craft meaningful digital experiences.
             </p>
           </div>
         </ScrollAnimation>
@@ -276,57 +290,102 @@ export default function Work() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8">
             {volunteering.map((volunteer, index) => (
               <ScrollAnimation key={index} delay={index * 200}>
                 <Card className="border-0 gradient-bg-soft card-hover h-full">
-                  <CardContent className="p-8 space-y-6">
-                    <div
-                      className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${volunteer.color} flex items-center justify-center`}
-                    >
-                      <volunteer.icon className="w-8 h-8 text-white" />
+                  <CardContent className="p-8  lg:flex gap-6 space-y-4">
+                    <div className="space-y-6">
+                      <div
+                        className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${volunteer.color} flex items-center justify-center`}
+                      >
+                        <volunteer.icon className="w-8 h-8 text-white" />
+                      </div>
+
+                      <div className="space-y-4">
+                        <div>
+                          <h3 className="text-xl font-bold">
+                            {volunteer.title}
+                          </h3>
+                          <p className="text-lg text-teal-600 font-medium">
+                            {volunteer.organization}
+                          </p>
+                          <Badge
+                            variant="outline"
+                            className="mt-2 flex items-center gap-1 w-fit"
+                          >
+                            <Calendar className="w-3 h-3" />
+                            {volunteer.period}
+                          </Badge>
+                        </div>
+
+                        <p className="text-muted-foreground leading-relaxed">
+                          {volunteer.description}
+                        </p>
+
+                        <div className="space-y-2">
+                          <h4 className="font-semibold text-teal-600 text-sm">
+                            Key Skills:
+                          </h4>
+                          <div className="flex flex-wrap gap-2">
+                            {volunteer.skills.map((project, i) => (
+                              <Badge
+                                key={i}
+                                variant="secondary"
+                                className="text-xs"
+                              >
+                                {project}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="text-xl font-bold">{volunteer.title}</h3>
-                        <p className="text-lg text-teal-600 font-medium">
-                          {volunteer.organization}
-                        </p>
-                        <Badge
-                          variant="outline"
-                          className="mt-2 flex items-center gap-1 w-fit"
-                        >
-                          <Calendar className="w-3 h-3" />
-                          {volunteer.period}
-                        </Badge>
-                      </div>
-
-                      <p className="text-muted-foreground leading-relaxed">
-                        {volunteer.description}
-                      </p>
-
-                      <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border-l-4 border-green-500">
-                        <p className="font-medium text-green-800 dark:text-green-200">
-                          Impact: {volunteer.impact}
-                        </p>
-                      </div>
-
+                    <div>
                       <div className="space-y-2">
                         <h4 className="font-semibold text-teal-600 text-sm">
-                          Key Projects:
+                          Projects & Contributions:
                         </h4>
-                        <div className="flex flex-wrap gap-2">
-                          {volunteer.projects.map((project, i) => (
-                            <Badge
-                              key={i}
-                              variant="secondary"
-                              className="text-xs"
+
+                        {volunteer.projects.map((project, i) => (
+                          <div
+                            key={i}
+                            className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border-l-4 border-green-500 flex gap-3 align-middle"
+                          >
+                            <div
+                              onClick={() =>
+                                setSelectedImage(
+                                  project.image?.src || project.image
+                                )
+                              }
+                              className="text-sm text-muted-foreground w-1/5 cursor-pointer"
                             >
-                              {project}
-                            </Badge>
-                          ))}
-                        </div>
+                              <Image
+                                src={project.image}
+                                alt={project.topic}
+                                className="w-full h-auto rounded-lg object-cover hover:scale-102 transition-transform duration-700"
+                                width={400}
+                                height={260}
+                              />
+                            </div>
+                            <div className="w-4/5 space-y-2">
+                              <div className="flex justify-between">
+                                <h6 className="font-semibold">
+                                  {project.topic}
+                                </h6>
+                                <Badge
+                                  variant="secondary"
+                                  className="bg-green-100 text-xs text-green-800 border-0 mb-2"
+                                >
+                                  {project.time}
+                                </Badge>
+                              </div>
+                              <p className="text-sm text-muted-foreground">
+                                {project.desc}
+                              </p>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </CardContent>
@@ -337,22 +396,21 @@ export default function Work() {
         </section>
       </ScrollAnimation>
 
-      
-
       {/* Call to Action */}
       <ScrollAnimation>
         <section className="text-center space-y-8 py-16">
           <Card className="border-0 gradient-bg-soft max-w-3xl mx-auto card-hover">
             <CardContent className="p-12 space-y-6">
               <h2 className="text-2xl md:text-3xl font-bold">
-                Let's Build Something{" "}
+                Let's Build Something
                 <span className="gradient-text">Amazing</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm always excited to take on new creative challenges and collaborate
-                with passionate teams. Whether you're a startup building your first 
-                product or an organization ready to reimagine your brand, let's create 
-                something extraordinary together.
+                I’m always inspired to take on new creative challenges and
+                collaborate with passionate teams. Whether it’s bringing a fresh
+                idea to life, crafting meaningful designs, or helping a brand
+                tell its story in a new way and I’m ready to create something
+                truly remarkable together.
               </p>
               <div className="flex flex-wrap justify-center gap-3 pt-4">
                 <Badge
@@ -379,6 +437,29 @@ export default function Work() {
           </Card>
         </section>
       </ScrollAnimation>
+
+      {/* Popup Modal */}
+      {selectedImage && (
+        <div
+          onClick={closeModal}
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
+        >
+          <div className="relative w-auto h-11/12 px-4 justify-center align-middle flex">
+            <img
+              src={selectedImage}
+              alt="Preview"
+              className="shadow-lg w-full object-contain h-auto"
+            />
+          </div>
+          <button
+            onClick={closeModal}
+            className="absolute top-5 right-5 bg-black/60 text-white rounded-full p-3 hover:bg-black transition"
+            aria-label="Close image preview"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
