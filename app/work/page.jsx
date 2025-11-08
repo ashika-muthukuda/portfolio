@@ -358,18 +358,16 @@ export default function Work() {
                                   project.image?.src || project.image
                                 )
                               }
-                              className="text-sm text-muted-foreground w-1/5 cursor-pointer"
+                              className="text-sm text-muted-foreground xl:w-1/5 w-full cursor-pointer hidden xl:block"
                             >
                               <Image
                                 src={project.image}
                                 alt={project.topic}
                                 className="w-full h-auto rounded-lg object-cover hover:scale-102 transition-transform duration-700"
-                                width={400}
-                                height={260}
                               />
                             </div>
-                            <div className="w-4/5 space-y-2">
-                              <div className="flex justify-between">
+                            <div className="xl:w-4/5 w-full space-y-2">
+                              <div className="xl:flex justify-between">
                                 <h6 className="font-semibold">
                                   {project.topic}
                                 </h6>
@@ -379,6 +377,20 @@ export default function Work() {
                                 >
                                   {project.time}
                                 </Badge>
+                              </div>
+                              <div
+                                onClick={() =>
+                                  setSelectedImage(
+                                    project.image?.src || project.image
+                                  )
+                                }
+                                className="text-sm text-muted-foreground w-full cursor-pointer xl:hidden"
+                              >
+                                <Image
+                                  src={project.image}
+                                  alt={project.topic}
+                                  className="w-full h-auto rounded-lg object-cover hover:scale-102 transition-transform duration-700"
+                                />
                               </div>
                               <p className="text-sm text-muted-foreground">
                                 {project.desc}
@@ -448,7 +460,7 @@ export default function Work() {
             <img
               src={selectedImage}
               alt="Preview"
-              className="shadow-lg w-full object-contain h-auto"
+              className="shadow-lg w-full object-cover h-auto"
             />
           </div>
           <button
