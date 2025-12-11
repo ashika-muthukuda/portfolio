@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Ashika Muthukuda - UI/UX Designer",
   description: "Transform ideas into intuitive, visually captivating digital experiences",
+  other: {
+    "google-site-verification": "scEH4fgpgNBNFlYnOazQ7Fwzx3g0GBIO8Z8NRYw9N-A",
+  },
 }
 
 export default function RootLayout({ children }) {
