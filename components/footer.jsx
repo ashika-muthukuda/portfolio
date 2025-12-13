@@ -65,7 +65,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SC</span>
+                <span className="text-white font-bold text-sm">AM</span>
               </div>
               <span className="text-2xl font-bold gradient-text">Ashika Muthukuda</span>
             </div>

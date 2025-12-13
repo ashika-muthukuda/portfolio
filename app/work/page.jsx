@@ -456,7 +456,7 @@ export default function Work() {
           onClick={closeModal}
           className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
         >
-          <div className="relative w-auto h-11/12 px-4 justify-center align-middle flex">
+          <div className="relative max-w-11/12 px-4 justify-center align-middle flex">
             <img
               src={selectedImage}
               alt="Preview"
