@@ -545,7 +545,7 @@ export default function Projects() {
                       <p className="text-muted-foreground leading-relaxed text-sm">
                         {project.overview}
                       </p>
-                      {project.colors.length > 0 && (
+                      {/* {project.colors.length > 0 && (
                         <div className="space-y-2">
                           <p className="text-xs text-teal-600 font-medium">
                             Color Scheme:
@@ -567,7 +567,7 @@ export default function Projects() {
                             )}
                           </div>
                         </div>
-                      )}
+                      )} */}
                     </div>
 
                     <div className="space-y-4">
