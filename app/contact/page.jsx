@@ -38,17 +38,9 @@ export default function Contact() {
       description: "Professional network and career updates",
     },
     {
-      name: "Behance",
-      handle: "@ashikamuthukuda",
-      url: "https://behance.net/ashikamuthukuda",
-      icon: Palette,
-      color: "from-emerald-500 to-teal-500",
-      description: "My design portfolio & creative showcases",
-    },
-    {
       name: "GitHub",
       handle: "@ashika-muthukuda",
-      url: "#",
+      url: "https://github.com/ashikamuthukuda",
       icon: Github,
       color: "from-emerald-500 to-teal-500",
       description: "Design thoughts and industry insights",
@@ -200,7 +192,7 @@ export default function Contact() {
                     </select>
                   </div>
 
-                  <div className="space-y-2">
+                  {/* <div className="space-y-2">
                     <Label htmlFor="budget" className="text-sm font-medium">
                       Project Budget
                     </Label>
@@ -215,7 +207,7 @@ export default function Contact() {
                       <option value="50k+">$50,000+</option>
                       <option value="discuss">Let's discuss</option>
                     </select>
-                  </div>
+                  </div> */}
 
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-sm font-medium">
@@ -237,10 +229,6 @@ export default function Contact() {
                     Send Message
                     <Send className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
-
-                  <p className="text-sm text-muted-foreground text-center">
-                    I usually reply within 24 hours on business days.
-                  </p>
                 </form>
               </CardContent>
             </Card>

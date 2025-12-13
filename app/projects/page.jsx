@@ -74,7 +74,7 @@ export default function Projects() {
         "YouTube (for design tutorials and inspiration)",
         "Pinterest (for plant imagery and layout ideas)",
       ],
-      colors: ["Purple, orange, green, and pink with white accents"],
+      colors: ["Purple","Orange","Green","Pink with white accents"],
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
@@ -108,11 +108,28 @@ export default function Projects() {
       ],
       colors: ["Pink", "purple", "green with white accents"],
       images: [imgp31],
-      icon: Smartphone,
+      icon: Monitor,
       color: "from-emerald-500 to-teal-500",
       featured: false,
       year: "2024",
       link: "#",
+    },
+
+    {
+      name: "Eduwingz – AI-Powered Teaching Assistant Web Application",
+      category: "Education • Final Yaer Project • Web Designs",
+      overview:"Eduwingz is an intelligent web application designed to enhance modern education by providing personalized support to both teachers and students. With AI-powered interaction and automation, the system simplifies classroom management, learning, and teaching processes. Built with a React (Material UI) frontend and a Django backend, Eduwingz seamlessly connects AI capabilities with a smooth, responsive user interface. Perfect for students, teachers, and educational platforms seeking a smart, interactive, and automated learning assistant.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: ["Orenge", "Yellow", "Black accents"],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: false,
+      year: "2025",
+      link: "https://github.com/ashika-muthukuda/eduwingz",
     },
   ];
 
@@ -130,7 +147,7 @@ export default function Projects() {
       count: projects.filter((p) => p.category.includes("Web")).length,
     },
     {
-      name: "Enterprise",
+      name: "Landing Pages",
       count: projects.filter((p) => p.category.includes("Enterprise")).length,
     },
   ];
@@ -160,7 +177,7 @@ export default function Projects() {
                 variant="secondary"
                 className="text-sm py-2 px-4 hover:scale-105 transition-all duration-300 cursor-pointer bg-gradient-to-r from-emerald-50 to-cyan-50 dark:from-emerald-900/20 dark:to-cyan-900/20 border-0"
               >
-                {category.name} ({category.count})
+                {category.name}
               </Badge>
             ))}
           </div>
