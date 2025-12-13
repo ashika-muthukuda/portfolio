@@ -1,7 +1,7 @@
 "use client"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
-import { Switch } from "@/components/ui/switch"
+import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 
 export function ModeToggle() {
@@ -14,33 +14,27 @@ export function ModeToggle() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center space-x-2">
-        <Sun className="h-4 w-4" />
-        <div className="w-11 h-6 bg-gray-200 rounded-full animate-pulse" />
-        <Moon className="h-4 w-4" />
-      </div>
+      <Button variant="ghost" size="icon" className="animate-pulse">
+        <Sun className="h-5 w-5" />
+      </Button>
     )
   }
 
   const isDark = theme === "dark"
 
-  const handleThemeChange = (checked) => {
-    setTheme(checked ? "dark" : "light")
-  }
-
   return (
-    <div className="flex items-center space-x-3 bg-secondary/50 backdrop-blur-sm rounded-full px-3 py-2 border transition-all duration-300 hover:bg-secondary/70">
-      <Sun
-        className={`h-4 w-4 transition-all duration-300 ${!isDark ? "text-teal-400 scale-110" : "text-muted-foreground scale-90"}`}
-      />
-      <Switch
-        checked={isDark}
-        onCheckedChange={handleThemeChange}
-        className="data-[state=checked]:bg-teal-600 data-[state=unchecked]:bg-teal-500"
-      />
-      <Moon
-        className={`h-4 w-4 transition-all duration-300 ${isDark ? "text-teal-400 scale-110" : "text-muted-foreground scale-90"}`}
-      />
-    </div>
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="transition-all duration-300 hover:scale-110"
+      title={`Switch to ${isDark ? "light" : "dark"} mode`}
+    >
+      {isDark ? (
+        <Sun className="h-5 w-5 text-teal-400 transition-all duration-300" />
+      ) : (
+        <Moon className="h-5 w-5 text-teal-400 transition-all duration-300" />
+      )}
+    </Button>
   )
 }
