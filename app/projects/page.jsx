@@ -74,7 +74,7 @@ export default function Projects() {
         "YouTube (for design tutorials and inspiration)",
         "Pinterest (for plant imagery and layout ideas)",
       ],
-      colors: ["Purple","Orange","Green","Pink with white accents"],
+      colors: ["Purple", "Orange", "Green", "Pink with white accents"],
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
@@ -98,27 +98,10 @@ export default function Projects() {
     },
 
     {
-      name: "Donut Delight - Flavorful Donut Banner Design",
-      category: "Food & Beverage • Web Designs",
-      overview:
-        "A vibrant and appetizing Figma design featuring a set of banner templates for a donut shop, 'Donut Delight.' This design showcases three unique flavors: Strawberry, Blueberry, and Green Apple, each with a colorful background and mint leaf accents. Perfect for promotional materials, websites, or social media, this template offers a playful yet professional look. Ideal for designers, food businesses, or marketers looking to highlight their products. Inspiration drawn from YouTube tutorials and Pinterest boards.",
-      resources: [
-        "YouTube (for design tutorials and inspiration)",
-        "Pinterest (for plant imagery and layout ideas)",
-      ],
-      colors: ["Pink", "purple", "green with white accents"],
-      images: [imgp31],
-      icon: Monitor,
-      color: "from-emerald-500 to-teal-500",
-      featured: false,
-      year: "2024",
-      link: "#",
-    },
-
-    {
       name: "Eduwingz – AI-Powered Teaching Assistant Web Application",
       category: "Education • Final Yaer Project • Web Designs",
-      overview:"Eduwingz is an intelligent web application designed to enhance modern education by providing personalized support to both teachers and students. With AI-powered interaction and automation, the system simplifies classroom management, learning, and teaching processes. Built with a React (Material UI) frontend and a Django backend, Eduwingz seamlessly connects AI capabilities with a smooth, responsive user interface. Perfect for students, teachers, and educational platforms seeking a smart, interactive, and automated learning assistant.",
+      overview:
+        "Eduwingz is an intelligent web application designed to enhance modern education by providing personalized support to both teachers and students. With AI-powered interaction and automation, the system simplifies classroom management, learning, and teaching processes. Built with a React (Material UI) frontend and a Django backend, Eduwingz seamlessly connects AI capabilities with a smooth, responsive user interface. Perfect for students, teachers, and educational platforms seeking a smart, interactive, and automated learning assistant.",
       resources: [
         "YouTube (for design tutorials and inspiration)",
         "Pinterest (for plant imagery and layout ideas)",
@@ -130,6 +113,95 @@ export default function Projects() {
       featured: false,
       year: "2025",
       link: "https://github.com/ashika-muthukuda/eduwingz",
+    },
+
+    {
+      name: "Z-Score Uni Finder – University & Degree Selection Tool",
+      category: "Education • Web Designs",
+      overview:
+        "A smart and user-friendly web application built to help students accurately find universities and degree programs based on their Z-Score. This project allows users to select their district, stream, and Z-Score to instantly view compatible degree options across Sri Lankan universities. Designed with a clean interface and smooth navigation, the system displays results dynamically, making the decision-making process easier for A/L students. Perfect for students, counselors, and educational platforms looking for a quick and reliable Z-Score–based university search tool.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: ["Blue", "White", "Light Grey accents"],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: false,
+      year: "2025",
+      link: "https://github.com/ashika-muthukuda/Z-ScoreUniFinder",
+    },
+
+    {
+      name: "GNN – OGBN Arxiv Dataset Project",
+      category: "Graphs and Vectors • AI Projects",
+      overview:
+        "A deep learning project focused on implementing Graph Neural Network (GNN) models using the OGBN-Arxiv dataset. This work explores node classification on a large-scale citation network, where each paper is represented as a node with meaningful features and connections. The project includes data preprocessing, model training, performance evaluation, and comparisons between different GNN architectures. Ideal for students, researchers, or anyone interested in graph-based machine learning and citation network analysis.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: ["No any color"],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: false,
+      year: "2025",
+      link: "https://github.com/ashika-muthukuda/Z-ScoreUniFinder",
+    },
+
+    {
+      name: "AR Animal Learning App for Kids – Interactive 3D Animal Education",
+      category: "Other • AR Application",
+      overview:
+        "An engaging Augmented Reality (AR) app designed to help children explore and learn about animals in a fun, interactive way. By combining 3D animal models with real-world views, the app transforms traditional learning into an immersive experience. Kids can view animals like Cat, Tiger, Deer, and Horse by scanning images or markers, while a grassy background adds realism. The app also provides short descriptions for each animal, making learning informative and enjoyable. Perfect for educators, parents, or developers interested in child-friendly AR applications.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: ["White", "Gray"],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: false,
+      year: "2025",
+      link: "",
+    },
+
+    {
+      name: "GlobalBooks SOA Project",
+      category: "Education • Web Designs",
+      overview:
+        "GlobalBooks Inc. is migrating its legacy monolithic order-processing system to a Service-Oriented Architecture (SOA). This project implements four autonomous services - Catalog, Orders, Payments, and Shipping - designed, implemented, composed, secured, and governed according to SOA principles.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: [""],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: false,
+      year: "2025",
+      link: "https://github.com/ashika-muthukuda/soa_project",
+    },
+
+    {
+      name: "NIC Decoder – National ID Information Extractor",
+      category: "Education • Web Designs",
+      overview:"A simple and efficient web tool that extracts key information from Sri Lankan National Identity Card (NIC) numbers. This project decodes the NIC to display the holder’s birth year, birth date, and gender in an easy-to-read format. Designed with a clean interface, the tool is perfect for developers, students, or anyone interested in quickly retrieving NIC-related data. Ideal for learning, demonstration, or practical use in local applications. Inspired by hands-on coding practice and personal project experimentation.",
+      resources: [
+        "YouTube (for design tutorials and inspiration)",
+        "Pinterest (for plant imagery and layout ideas)",
+      ],
+      colors: [""],
+      images: [imgp31],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: false,
+      year: "2025",
+      link: "https://github.com/ashika-muthukuda/soa_project",
     },
   ];
 
@@ -466,34 +538,36 @@ export default function Projects() {
                       </div>
                     </div>
 
-                    <div className="space-y-3 flex-grow">
+                    <div className="space-y-3 flex-col">
                       <h3 className="text-xl font-bold group-hover:gradient-text transition-all duration-300">
                         {project.name}
                       </h3>
                       <p className="text-muted-foreground leading-relaxed text-sm">
                         {project.overview}
                       </p>
-                      <div className="space-y-2">
-                        <p className="text-xs text-teal-600 font-medium">
-                          Color Scheme:
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          {project.colors.slice(0, 3).map((color, i) => (
-                            <Badge
-                              key={i}
-                              variant="outline"
-                              className="text-xs"
-                            >
-                              {color}
-                            </Badge>
-                          ))}
-                          {project.colors.length > 3 && (
-                            <Badge variant="outline" className="text-xs">
-                              +{project.colors.length - 3} more
-                            </Badge>
-                          )}
+                      {project.colors.length > 0 && (
+                        <div className="space-y-2">
+                          <p className="text-xs text-teal-600 font-medium">
+                            Color Scheme:
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {project.colors.slice(0, 3).map((color, i) => (
+                              <Badge
+                                key={i}
+                                variant="outline"
+                                className="text-xs"
+                              >
+                                {color}
+                              </Badge>
+                            ))}
+                            {project.colors.length > 3 && (
+                              <Badge variant="outline" className="text-xs">
+                                +{project.colors.length - 3} more
+                              </Badge>
+                            )}
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
 
                     <div className="space-y-4">
@@ -516,13 +590,15 @@ export default function Projects() {
                         )}
                       </div> */}
 
-                      <Button
-                        variant="ghost"
-                        className=" justify-between group-hover:bg-primary/10 transition-colors"
-                      >
-                        View Prototype
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
+                      <Link href={project.link}>
+                        <Button
+                          variant="ghost"
+                          className=" justify-between group-hover:bg-primary/10 transition-colors"
+                        >
+                          View Project
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
