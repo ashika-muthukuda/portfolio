@@ -14,12 +14,9 @@ export const metadata = {
     "google-site-verification": "scEH4fgpgNBNFlYnOazQ7Fwzx3g0GBIO8Z8NRYw9N-A",
   },
   icons: {
-    icon: [
-      { url: "/logo.jpg", type: "image/jpeg" },
-      { url: "/placeholder-logo.png", type: "image/png" },
-    ],
-    shortcut: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },  
 }
 
