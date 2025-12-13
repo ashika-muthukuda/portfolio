@@ -32,12 +32,12 @@ export default function Work() {
   const workExperience = [
     {
       title: "Graphic Designer",
-      company: "Isuru Curation (Pvt) Ltd",
+      company: "Isuru Creation (Pvt) Ltd",
       period: "2023 - Present",
       type: "Full-Time",
       color: "from-green-500 to-teal-500",
       description:
-        "During my time as a designer at Isuru Curation (Pvt) Ltd, I gained hands-on experience in delivering creative projects across print and digital media. I collaborated closely with clients and team members, contributing to innovative solutions while refining my design and project management skills.",
+        "During my time as a designer at Isuru Creation (Pvt) Ltd, I gained hands-on experience in delivering creative projects across print and digital media. I collaborated closely with clients and team members, contributing to innovative solutions while refining my design and project management skills.",
       achievements: [
         "Utilized Adobe Photoshop, Illustrator, InDesign, and CorelDRAW to design a wide range of creative materials.",
         "Created book covers, wedding cards, social media posts, banners, flyers, and other print and digital content.",
