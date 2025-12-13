@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, themes } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -22,11 +22,19 @@ export function ModeToggle() {
 
   const isDark = theme === "dark"
 
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme)
+    // Force update for Samsung devices
+    setTimeout(() => {
+      document.documentElement.style.colorScheme = newTheme === 'dark' ? 'dark light' : 'light dark'
+    }, 0)
+  }
+
   return (
     <Button
       variant="ghost"
       size="icon"
-      onClick={() => setTheme(isDark ? "light" : "dark")}
+      onClick={() => handleThemeChange(isDark ? "light" : "dark")}
       className="transition-all duration-300 hover:scale-110"
       title={`Switch to ${isDark ? "light" : "dark"} mode`}
     >

@@ -5,6 +5,22 @@
   If you need a custom variant for dark mode, re-add it with correct syntax
   or configure it via the Tailwind/PostCSS plugin configuration. */
 
+/* Samsung device fixes */
+@supports (-webkit-appearance: none) {
+  :root {
+    /* Force Samsung to recognize color-scheme */
+    color-scheme: light dark;
+    -webkit-color-scheme: light dark;
+    -moz-color-scheme: light dark;
+  }
+}
+
+/* Samsung Internet Browser compatibility */
+html[data-color-scheme] {
+  color-scheme: light dark;
+  -webkit-color-scheme: light dark;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -39,6 +55,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  color-scheme: light dark;
 }
 
 .dark {
