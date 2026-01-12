@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -15,6 +17,7 @@ import {
   Calendar,
   Target,
   TrendingUp,
+  X,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -29,7 +32,13 @@ import imgp24 from "../../assets/imgs/img-p24.png";
 import imgp31 from "../../assets/imgs/img-p31.png";
 import imgp41 from "../../assets/imgs/img-p41.png";
 
+import Image from "next/image";
+import { useState } from "react";
+
 export default function Projects() {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const closeModal = () => setSelectedImage(null);
+
   const projects = [
     {
       name: "Donut Delight - Flavorful Donut Banner Design",
@@ -44,7 +53,7 @@ export default function Projects() {
       images: [imgp11, imgp12, imgp13, imgp14],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: true,
+      normal: true,
       year: "2025",
       link: "https://bit.ly/3J7AHfd",
     },
@@ -78,7 +87,7 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: true,
+      normal: true,
       year: "2025",
       link: "https://bit.ly/4qzdljo",
     },
@@ -110,7 +119,7 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: false,
+      other: true,
       year: "2025",
       link: "https://github.com/ashika-muthukuda/eduwingz",
     },
@@ -128,7 +137,7 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: false,
+      other: true,
       year: "2025",
       link: "https://github.com/ashika-muthukuda/Z-ScoreUniFinder",
     },
@@ -146,7 +155,7 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: false,
+      other: true,
       year: "2025",
       link: "https://github.com/ashika-muthukuda/Z-ScoreUniFinder",
     },
@@ -164,7 +173,7 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: false,
+      other: true,
       year: "2025",
       link: "",
     },
@@ -182,7 +191,7 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: false,
+      other: true,
       year: "2025",
       link: "https://github.com/ashika-muthukuda/soa_project",
     },
@@ -190,7 +199,8 @@ export default function Projects() {
     {
       name: "NIC Decoder – National ID Information Extractor",
       category: "Education • Web Designs",
-      overview:"A simple and efficient web tool that extracts key information from Sri Lankan National Identity Card (NIC) numbers. This project decodes the NIC to display the holder’s birth year, birth date, and gender in an easy-to-read format. Designed with a clean interface, the tool is perfect for developers, students, or anyone interested in quickly retrieving NIC-related data. Ideal for learning, demonstration, or practical use in local applications. Inspired by hands-on coding practice and personal project experimentation.",
+      overview:
+        "A simple and efficient web tool that extracts key information from Sri Lankan National Identity Card (NIC) numbers. This project decodes the NIC to display the holder’s birth year, birth date, and gender in an easy-to-read format. Designed with a clean interface, the tool is perfect for developers, students, or anyone interested in quickly retrieving NIC-related data. Ideal for learning, demonstration, or practical use in local applications. Inspired by hands-on coding practice and personal project experimentation.",
       resources: [
         "YouTube (for design tutorials and inspiration)",
         "Pinterest (for plant imagery and layout ideas)",
@@ -199,14 +209,15 @@ export default function Projects() {
       images: [imgp31],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
-      featured: false,
+      other: true,
       year: "2025",
       link: "https://github.com/ashika-muthukuda/soa_project",
     },
   ];
 
   const featuredProjects = projects.filter((p) => p.featured);
-  const otherProjects = projects.filter((p) => !p.featured);
+  const otherProjects = projects.filter((p) => p.other);
+  const normalProjects = projects.filter((p) => p.normal);
 
   const projectCategories = [
     { name: "All Projects", count: projects.length },
@@ -468,12 +479,17 @@ export default function Projects() {
                             Preview:
                           </h4>
                           <div className="space-y-3 flex-col border-1 border-muted-foreground/50 p-3 rounded-xl">
-                            <div className="w-full">
-                              <img
+                            <div
+                              className="w-full"
+                              onClick={() => setSelectedImage(project.images[0]?.src || project.images[0])}
+                            >
+                              <Image
                                 src={
                                   project.images[0]?.src || project.images[0]
                                 }
                                 alt={`${project.name}`}
+                                width={600}
+                                height={400}
                                 className="w-full h-auto rounded-xl object-cover hover:scale-102 transition-transform duration-700"
                               />
                             </div>
@@ -481,12 +497,16 @@ export default function Projects() {
                               {project.images.slice(1).map((src, i) => (
                                 <div
                                   key={i}
-                                  // onClick={() => setSelectedImage(src)}
+                                  onClick={() =>
+                                    setSelectedImage(src || src?.src)
+                                  }
                                   className="overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
                                 >
-                                  <img
+                                  <Image
                                     src={src?.src || src}
                                     alt={`${project.name} screenshot ${i + 2}`}
+                                    width={200}
+                                    height={200}
                                     className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300"
                                   />
                                 </div>
@@ -501,6 +521,114 @@ export default function Projects() {
               </ScrollAnimation>
             ))}
           </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {normalProjects.map((project, index) => (
+              <ScrollAnimation key={index} delay={index * 100}>
+                <Card className="border-0 gradient-bg-soft card-hover h-full group">
+                  <CardContent className="p-8 space-y-6 h-full flex flex-col">
+                    <div className="flex items-start justify-between">
+                      <div
+                        className={`w-14 h-14 rounded-xl bg-gradient-to-r ${project.color} flex items-center justify-center group-hover:scale-110 transition-all duration-300`}
+                      >
+                        <project.icon className="w-7 h-7 text-white" />
+                      </div>
+                      <div className="text-right">
+                        <Badge
+                          variant="secondary"
+                          className="text-xs mb-2 bg-gray-100 text-gray-800 border-0"
+                        >
+                          {project.year}
+                        </Badge>
+                        <Badge variant="secondary" className="text-xs block">
+                          {project.category}
+                        </Badge>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3 flex-col">
+                      <h3 className="text-xl font-bold group-hover:gradient-text transition-all duration-300">
+                        {project.name}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed text-sm">
+                        {project.overview}
+                      </p>
+                      {/* {project.colors.length > 0 && (
+                        <div className="space-y-2">
+                          <p className="text-xs text-teal-600 font-medium">
+                            Color Scheme:
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {project.colors.slice(0, 3).map((color, i) => (
+                              <Badge
+                                key={i}
+                                variant="outline"
+                                className="text-xs"
+                              >
+                                {color}
+                              </Badge>
+                            ))}
+                            {project.colors.length > 3 && (
+                              <Badge variant="outline" className="text-xs">
+                                +{project.colors.length - 3} more
+                              </Badge>
+                            )}
+                          </div>
+                        </div>
+                      )} */}
+                    </div>
+
+                    <div className="space-y-4">
+                      {/* <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
+                        <p className="text-sm font-medium text-teal-800 dark:text-teal-200">
+                          {project.impact}
+                        </p>
+                      </div> */}
+
+                      {/* <div className="flex flex-wrap gap-2">
+                        {project.skills.slice(0, 3).map((skill, i) => (
+                          <Badge key={i} variant="outline" className="text-xs">
+                            {skill}
+                          </Badge>
+                        ))}
+                        {project.skills.length > 3 && (
+                          <Badge variant="outline" className="text-xs">
+                            +{project.skills.length - 3} more
+                          </Badge>
+                        )}
+                      </div> */}
+                      <div className="grid grid-cols-4 gap-2 w-full">
+                        {project.images.slice(0).map((src, i) => (
+                          <div
+                            key={i}
+                            onClick={() => setSelectedImage(src?.src || src)}
+                            className="overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer"
+                          >
+                            <Image
+                              src={src?.src || src}
+                              alt={`${project.name} screenshot ${i + 2}`}
+                              width={150}
+                              height={150}
+                              className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300"
+                            />
+                          </div>
+                        ))}
+                      </div>
+
+                      <Link href={project.link}>
+                        <Button
+                          variant="ghost"
+                          className=" justify-between group-hover:bg-primary/10 transition-colors"
+                        >
+                          View Project
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              </ScrollAnimation>
+            ))}
+          </div>
         </section>
       </ScrollAnimation>
 
@@ -508,7 +636,7 @@ export default function Projects() {
       <ScrollAnimation>
         <section className="space-y-12">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">More Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Other Projects</h2>
             <p className="text-muted-foreground text-lg">
               Additional work showcasing diverse design challenges
             </p>
@@ -653,6 +781,31 @@ export default function Projects() {
           </Card>
         </section>
       </ScrollAnimation>
+
+      {/* Popup Modal */}
+      {selectedImage && (
+        <div
+          onClick={closeModal}
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
+        >
+          <div className="relative max-h-11/12 justify-center align-middle flex">
+            <Image
+              src={selectedImage}
+              alt="Preview"
+              width={1000}
+              height={800}
+              className="shadow-lg object-contain"
+            />
+          </div>
+          <button
+            onClick={closeModal}
+            className="absolute top-5 right-5 bg-black/60 text-white rounded-full p-3 hover:bg-black transition"
+            aria-label="Close image preview"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

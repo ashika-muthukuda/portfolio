@@ -136,7 +136,7 @@ export default function Footer() {
         <div className="border-t border-border/50 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <span>© 2025 | Ashika Muthukuda</span>
+              <span>© 2026 | Ashika Muthukuda</span>
               {/* <Heart className="w-4 h-4 text-red-500 animate-pulse" /> */}
             </div>
             {/* <div className="flex items-center space-x-6 text-sm">
