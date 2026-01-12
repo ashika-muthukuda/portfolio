@@ -31,6 +31,19 @@ import imgp23 from "../../assets/imgs/img-p23.png";
 import imgp24 from "../../assets/imgs/img-p24.png";
 import imgp31 from "../../assets/imgs/img-p31.png";
 import imgp41 from "../../assets/imgs/img-p41.png";
+import imgp51 from "../../assets/imgs/img-p51.png";
+import imgp52 from "../../assets/imgs/img-p52.png";
+import imgp53 from "../../assets/imgs/img-p53.png";
+import imgp54 from "../../assets/imgs/img-p54.png";
+import imgp61 from "../../assets/imgs/img-p61.png";
+import imgp62 from "../../assets/imgs/img-p62.png";
+import imgp63 from "../../assets/imgs/img-p63.png";
+import imgp64 from "../../assets/imgs/img-p64.png";
+import imgp71 from "../../assets/imgs/img-p71.jpeg";
+import imgp72 from "../../assets/imgs/img-p72.png";
+import imgp73 from "../../assets/imgs/img-p73.png";
+import imgp74 from "../../assets/imgs/img-p74.png";
+
 
 import Image from "next/image";
 import { useState } from "react";
@@ -40,6 +53,55 @@ export default function Projects() {
   const closeModal = () => setSelectedImage(null);
 
   const projects = [
+    {
+      name: "HealthChat AI – Your Personal Health Assistant",
+      category: "Healthcare • Web Designs",
+      overview:
+      "HealthChat AI is a web application designed to provide users with a friendly and intelligent health assistant experience. It combines conversational AI with an easy-to-use interface to help users get accurate health information, track symptoms, and receive personalized health guidance. The core idea is to make healthcare advice accessible, interactive, and reliable, without replacing medical professionals but supporting users with instant insights.",
+      resources: [
+        "Pinterest and Freepik (for imagery and layout ideas)",
+      ],
+      colors: ["Light Blue", "Blue with white accents"],
+      images: [imgp51, imgp52, imgp53, imgp54],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      normal: false,
+      year: "2026",
+      link: "",
+    },
+    {
+      name: "Mood-Based Daily Planner",
+      category: "Supportive Application • Web Designs",
+      overview:
+      "The Mood-Based Daily Planner is a mobile task planning interface designed to support productivity while respecting the user’s emotional state. Unlike traditional to-do list applications, this design adapts its layout, colors, and task suggestions based on how the user feels, creating a more personal and supportive experience. In my Mood-Based Daily Planner UI, I designed the interface around three main user moods (Happy, Tired, and Stressed). Each mood changes the visual style and task experience, making the app feel more personal and emotionally supportive.",
+      resources: [
+      ],
+      colors: ["Orange, Purple, Green with white accents"],
+      images: [imgp61],
+      icon: Smartphone,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      normal: false,
+      year: "2026",
+      link: "",
+    },
+    {
+      name: "Local Makers – Sri Lankan Handicrafts Marketplace",
+      category: "Business • Web Designs",
+      overview:
+      "Local Makers is a conceptual web-based marketplace designed to connect Sri Lankan artisans with conscious consumers who value authenticity, tradition, and handcrafted quality. The platform celebrates Sri Lanka’s rich craft heritage by providing a digital space where traditional artisans can showcase and sell their products while preserving cultural techniques and supporting sustainable livelihoods. This UI design was created with a focus on • Handicrafts • Heritage • Heart, ensuring a warm, human-centered experience that reflects the spirit of Sri Lankan craftsmanship.",
+      resources: [
+      ],
+      colors: ["Warm terracotta", "amber", "earth tones reflecting clay, soil, and traditional dyes"],
+      images: [imgp71, imgp72, imgp73, imgp74],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      normal: false,
+      year: "2026",
+      link: "",
+    },
     {
       name: "Donut Delight - Flavorful Donut Banner Design",
       category: "Food & Beverage • Web Designs",
@@ -606,9 +668,9 @@ export default function Projects() {
                             <Image
                               src={src?.src || src}
                               alt={`${project.name} screenshot ${i + 2}`}
-                              width={150}
-                              height={150}
-                              className="w-full h-auto object-cover hover:scale-110 transition-transform duration-300"
+                              width={250}
+                              height={250}
+                              className="object-contain hover:scale-110 transition-transform duration-300"
                             />
                           </div>
                         ))}
