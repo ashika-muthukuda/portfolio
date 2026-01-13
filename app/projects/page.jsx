@@ -94,9 +94,9 @@ export default function Projects() {
       category: "Tourism • Web Designs",
       overview:
       "Visit Sri Lanka is a modern travel discovery web application UI designed to help users explore tourist destinations across Sri Lanka in a simple, visually engaging, and user-friendly way. This project focuses on creating a smooth digital experience that allows both local and international travelers to discover places, plan trips, and gain inspiration for their journeys.",
-      resources: [
+      resources: ["Pinterest, Google and Freepik (for imagery and layout ideas)"
       ],
-      colors: ["Blue reflects the ocean, sky, and calm travel atmosphere", "Green represents forests, hills, and eco-tourism experiences"],
+      colors: ["Blue, Green with white accents"],
       images: [imgp81, imgp82, imgp83, imgp84],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
