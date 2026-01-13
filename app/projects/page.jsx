@@ -43,7 +43,10 @@ import imgp71 from "../../assets/imgs/img-p71.jpeg";
 import imgp72 from "../../assets/imgs/img-p72.png";
 import imgp73 from "../../assets/imgs/img-p73.png";
 import imgp74 from "../../assets/imgs/img-p74.png";
-
+import imgp81 from "../../assets/imgs/img-p81.png";
+import imgp82 from "../../assets/imgs/img-p82.png";
+import imgp83 from "../../assets/imgs/img-p83.png";
+import imgp84 from "../../assets/imgs/img-p84.png";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -68,11 +71,11 @@ export default function Projects() {
       featured: true,
       normal: false,
       year: "2026",
-      link: "",
+      link: "https://bit.ly/3Nhtmv8",
     },
     {
       name: "Mood-Based Daily Planner",
-      category: "Supportive Application • Web Designs",
+      category: "Supportive Application • Mobile UI Designs",
       overview:
       "The Mood-Based Daily Planner is a mobile task planning interface designed to support productivity while respecting the user’s emotional state. Unlike traditional to-do list applications, this design adapts its layout, colors, and task suggestions based on how the user feels, creating a more personal and supportive experience. In my Mood-Based Daily Planner UI, I designed the interface around three main user moods (Happy, Tired, and Stressed). Each mood changes the visual style and task experience, making the app feel more personal and emotionally supportive.",
       resources: [
@@ -80,11 +83,27 @@ export default function Projects() {
       colors: ["Orange, Purple, Green with white accents"],
       images: [imgp61],
       icon: Smartphone,
+      color: "fai coursesrom-emerald-500 to-teal-500",
+      featured: true,
+      normal: false,
+      year: "2026",
+      link: "https://bit.ly/4suTPWc",
+    },
+    {
+      name: "Visit Sri Lanka – Travel Discovery Web App",
+      category: "Tourism • Web Designs",
+      overview:
+      "Visit Sri Lanka is a modern travel discovery web application UI designed to help users explore tourist destinations across Sri Lanka in a simple, visually engaging, and user-friendly way. This project focuses on creating a smooth digital experience that allows both local and international travelers to discover places, plan trips, and gain inspiration for their journeys.",
+      resources: [
+      ],
+      colors: ["Blue reflects the ocean, sky, and calm travel atmosphere", "Green represents forests, hills, and eco-tourism experiences"],
+      images: [imgp81, imgp82, imgp83, imgp84],
+      icon: Monitor,
       color: "from-emerald-500 to-teal-500",
       featured: true,
       normal: false,
       year: "2026",
-      link: "",
+      link: "https://bit.ly/3YyrMYe",
     },
     {
       name: "Local Makers – Sri Lankan Handicrafts Marketplace",
@@ -100,7 +119,7 @@ export default function Projects() {
       featured: true,
       normal: false,
       year: "2026",
-      link: "",
+      link: "https://bit.ly/4qNq0P7",
     },
     {
       name: "Donut Delight - Flavorful Donut Banner Design",
@@ -850,7 +869,7 @@ export default function Projects() {
           onClick={closeModal}
           className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50"
         >
-          <div className="relative max-h-11/12 justify-center align-middle flex">
+          <div className="relative max-h-11/12 max-w-11/12 justify-center align-middle flex">
             <Image
               src={selectedImage}
               alt="Preview"
