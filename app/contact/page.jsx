@@ -248,7 +248,7 @@ export default function Contact() {
                       Available for New Projects
                     </h3>
                     <p className="text-green-700 dark:text-green-300 text-sm">
-                      Currently accepting projects starting in Q2 2025
+                      Currently accepting projects starting in Q2 2026
                     </p>
                   </div>
                 </div>

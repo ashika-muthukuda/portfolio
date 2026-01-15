@@ -232,12 +232,12 @@ export default function Home() {
                       >
                         <work.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                       </div>
-                      <Badge
+                      {/* <Badge
                         variant="secondary"
                         className="bg-green-100 text-green-800 border-0 text-xs sm:text-sm"
                       >
                         {work.metrics}
-                      </Badge>
+                      </Badge> */}
                     </div>
                     <div className="space-y-3">
                       <h3 className="text-lg sm:text-xl font-bold group-hover:gradient-text transition-all duration-300">

@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { ScrollAnimation } from "@/components/scroll-animation";
 import {
   Briefcase,
@@ -13,6 +14,8 @@ import {
   Calendar,
   MapPin,
   X,
+  ArrowRight,
+  MoveRight,
 } from "lucide-react";
 
 import imgw11 from "../../assets/imgs/img-w11.jpeg";
@@ -21,19 +24,35 @@ import imgw13 from "../../assets/imgs/img-w13.jpeg";
 import imgw21 from "../../assets/imgs/img-w21.jpeg";
 import imgw22 from "../../assets/imgs/img-w22.jpeg";
 import imgw31 from "../../assets/imgs/img-w31.jpeg";
+import imgj11 from "../../assets/imgs/img-j11.jpg";
+import imgj12 from "../../assets/imgs/img-j12.jpg";
+import imgj13 from "../../assets/imgs/img-j13.jpg";
+import imgj14 from "../../assets/imgs/img-j14.jpg";
+import imgj15 from "../../assets/imgs/img-j15.jpg";
+import imgj16 from "../../assets/imgs/img-j16.jpg";
+import imgj17 from "../../assets/imgs/img-j17.jpg";
+import imgj18 from "../../assets/imgs/img-j18.jpg"; 
+import imgj19 from "../../assets/imgs/img-j19.jpg";
 
 import Image from "next/image";
 import { useState } from "react";
 
 export default function Work() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [currentJobImages, setCurrentJobImages] = useState([]);
   const closeModal = () => setSelectedImage(null);
+
+  const openGallery = (images) => {
+    setCurrentJobImages(images);
+    setGalleryOpen(true);
+  };
 
   const workExperience = [
     {
       title: "Graphic Designer",
       company: "Isuru Creation (Pvt) Ltd",
-      period: "2023 - Present",
+      period: "2021 - 2022",
       type: "Full-Time",
       color: "from-green-500 to-teal-500",
       description:
@@ -58,6 +77,7 @@ export default function Work() {
       ],
       icon: Briefcase,
       color: "from-emerald-500 to-teal-500",
+      images: [imgj11, imgj12, imgj13, imgj14, imgj15, imgj16, imgj17, imgj18, imgj19],
     },
   ];
 
@@ -246,7 +266,7 @@ export default function Work() {
                                 className="flex items-start space-x-3"
                               >
                                 <TrendingUp className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                                <span className="text-muted-foreground">
+                                <span className="text-muted-foreground text-sm">
                                   {achievement}
                                 </span>
                               </li>
@@ -269,6 +289,36 @@ export default function Work() {
                               </Badge>
                             ))}
                           </div>
+                        </div>
+                        <div className="grid grid-cols-5 gap-3 w-full relative group">
+                          {job.images.slice(0, 5).map((src, i) => (
+                            <div
+                              key={i}
+                              // onClick={() => setSelectedImage(src || src?.src)}
+                              className="overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 cursor-pointer aspect-video"
+                            >
+                              <Image
+                                src={src?.src || src}
+                                alt={src}
+                                width={400}
+                                height={225}
+                                className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                              />
+                            </div>
+                          ))}
+                          <>
+                            <div 
+                              onClick={() => openGallery(job.images)}
+                              className="absolute right-0 top opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-l from-black via-black/70 to-transparent rounded-lg p-4 w-1/3 h-full flex items-center justify-end cursor-pointer"
+                            >
+                              <div className="flex flex-col items-center justify-center hover:scale-105 transition-transform">
+                                <div className="border border-white rounded-full p-2">
+                                  <MoveRight className="w-4 h-4 text-white" />
+                                </div>
+                                <h5 className="text-sm mt-2 text-white">See More</h5>
+                              </div>
+                            </div>
+                          </>
                         </div>
                       </div>
                     </div>
@@ -449,6 +499,51 @@ export default function Work() {
           </Card>
         </section>
       </ScrollAnimation>
+
+      {/* Image Gallery Popup */}
+      {galleryOpen && (
+        <div
+          onClick={() => setGalleryOpen(false)}
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-[90vw] h-[90vh] bg-white dark:bg-slate-950 rounded-lg overflow-hidden flex flex-col"
+          >
+            <button
+              onClick={() => setGalleryOpen(false)}
+              className="absolute top-4 right-4 bg-black/60 text-white rounded-full p-3 hover:bg-black transition z-10"
+              aria-label="Close gallery"
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            <div className="p-6 flex-1 overflow-y-auto">
+              <h2 className="text-3xl font-bold mb-6">Project Gallery</h2>
+              
+              {/* Masonry Image List */}
+              <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
+                {currentJobImages.map((src, i) => (
+                  <div
+                    key={i}
+                    onClick={() => setSelectedImage(src?.src || src)}
+                    className="relative overflow-hidden rounded-lg cursor-pointer group shadow-md hover:shadow-xl transition-shadow break-inside-avoid"
+                  >
+                    <Image
+                      src={src?.src || src}
+                      alt={`Gallery ${i}`}
+                      width={600}
+                      height={600}
+                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Popup Modal */}
       {selectedImage && (
