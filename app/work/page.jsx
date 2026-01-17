@@ -31,7 +31,7 @@ import imgj14 from "../../assets/imgs/img-j14.jpg";
 import imgj15 from "../../assets/imgs/img-j15.jpg";
 import imgj16 from "../../assets/imgs/img-j16.jpg";
 import imgj17 from "../../assets/imgs/img-j17.jpg";
-import imgj18 from "../../assets/imgs/img-j18.jpg"; 
+import imgj18 from "../../assets/imgs/img-j18.jpg";
 import imgj19 from "../../assets/imgs/img-j19.jpg";
 
 import Image from "next/image";
@@ -47,6 +47,8 @@ export default function Work() {
     setCurrentJobImages(images);
     setGalleryOpen(true);
   };
+
+  const currentImages = []
 
   const workExperience = [
     {
@@ -77,7 +79,17 @@ export default function Work() {
       ],
       icon: Briefcase,
       color: "from-emerald-500 to-teal-500",
-      images: [imgj11, imgj12, imgj13, imgj14, imgj15, imgj16, imgj17, imgj18, imgj19],
+      images: [
+        imgj11,
+        imgj12,
+        imgj13,
+        imgj14,
+        imgj15,
+        imgj16,
+        imgj17,
+        imgj18,
+        imgj19,
+      ],
     },
   ];
 
@@ -307,7 +319,7 @@ export default function Work() {
                             </div>
                           ))}
                           <>
-                            <div 
+                            <div
                               onClick={() => openGallery(job.images)}
                               className="absolute right-0 top opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-l from-black via-black/70 to-transparent rounded-lg p-4 w-1/3 h-full flex items-center justify-end cursor-pointer"
                             >
@@ -315,7 +327,9 @@ export default function Work() {
                                 <div className="border border-white rounded-full p-2">
                                   <MoveRight className="w-4 h-4 text-white" />
                                 </div>
-                                <h5 className="text-sm mt-2 text-white">See More</h5>
+                                <h5 className="text-sm mt-2 text-white">
+                                  See More
+                                </h5>
                               </div>
                             </div>
                           </>
@@ -456,6 +470,30 @@ export default function Work() {
             ))}
           </div>
         </section>
+        
+        {/* <div className="pt-16 flex-1 overflow-y-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">Design Volunteer Gallery</h2>
+
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-3 gap-3 space-y-6">
+            {currentImages.map((src, i) => (
+              <div
+                key={i}
+                // onClick={() => setSelectedImage(src?.src || src)}
+                className="relative overflow-hidden rounded-lg cursor-pointer group shadow-md hover:shadow-xl transition-shadow break-inside-avoid"
+              >
+                <Image
+                  src={src?.src || src}
+                  alt={`Gallery ${i}`}
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"></div>
+              </div>
+            ))}
+          </div>
+        </div> */}
+
       </ScrollAnimation>
 
       {/* Call to Action */}
@@ -520,7 +558,7 @@ export default function Work() {
 
             <div className="p-6 flex-1 overflow-y-auto">
               <h2 className="text-3xl font-bold mb-6">Project Gallery</h2>
-              
+
               {/* Masonry Image List */}
               <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
                 {currentJobImages.map((src, i) => (

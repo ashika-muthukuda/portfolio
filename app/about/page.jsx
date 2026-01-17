@@ -15,7 +15,19 @@ import {
   Camera,
   Users,
   BookOpen,
+  X,
 } from "lucide-react";
+
+import imga1 from "../../assets/imgs/img-a1.jpeg";
+import imga2 from "../../assets/imgs/img-a2.jpg";
+import imga3 from "../../assets/imgs/img-a3.jpg";
+import imga4 from "../../assets/imgs/img-a4.jpg";
+import imga5 from "../../assets/imgs/img-a5.jpeg";
+import imga6 from "../../assets/imgs/img-a6.jpeg";
+import imga7 from "../../assets/imgs/img-a7.jpg";
+import imga8 from "../../assets/imgs/img-a8.jpg";
+
+import Image from "next/image";
 
 export default function About() {
   const skills = [
@@ -120,6 +132,17 @@ export default function About() {
       year: "2023",
       issuer: "Open University",
     },
+  ];
+
+  const currentArtImages = [
+    imga1,
+    imga2,
+    imga3,
+    imga4,
+    imga5,
+    imga6,
+    imga7,
+    imga8,
   ];
 
   return (
@@ -503,7 +526,7 @@ export default function About() {
 
       {/* Personal Interests */}
       <ScrollAnimation>
-        <section className="space-y-12">
+        <section className="space-y-12 px-16">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold">Beyond Design</h2>
 
@@ -535,6 +558,29 @@ export default function About() {
             ))}
           </div>
         </section>
+        <div className="pt-16 flex-1 overflow-y-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">Art Gallery</h2>
+
+          {/* Masonry Image List */}
+          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-3 gap-3 space-y-6">
+            {currentArtImages.map((src, i) => (
+              <div
+                key={i}
+                // onClick={() => setSelectedImage(src?.src || src)}
+                className="relative overflow-hidden rounded-lg cursor-pointer group shadow-md hover:shadow-xl transition-shadow break-inside-avoid"
+              >
+                <Image
+                  src={src?.src || src}
+                  alt={`Gallery ${i}`}
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"></div>
+              </div>
+            ))}
+          </div>
+        </div>
       </ScrollAnimation>
 
       {/* Personal Touch */}
@@ -560,12 +606,6 @@ export default function About() {
               <div className="flex flex-wrap justify-center gap-3">
                 <Badge
                   variant="secondary"
-                  className="bg-orange-100 text-orange-800 border-0"
-                >
-                  ☕ Coffee Lover
-                </Badge>
-                <Badge
-                  variant="secondary"
                   className="bg-green-100 text-green-800 border-0"
                 >
                   🥾 Hiking
@@ -580,7 +620,7 @@ export default function About() {
                   variant="secondary"
                   className="bg-emerald-100 text-emerald-800 border-0"
                 >
-                  🍳 Cooking
+                  🎨 Designing
                 </Badge>
                 <Badge
                   variant="secondary"
