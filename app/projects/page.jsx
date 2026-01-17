@@ -68,7 +68,7 @@ export default function Projects() {
       resources: [
         "Pinterest, Google and Freepik (for imagery and layout ideas)",
       ],
-      colors: ["Midnight Black / Deep Space Blackc", "Dark Crimson / Deep Maroon"],
+      colors: ["Midnight Black", "Deep Maroon"],
       images: [imgp91, imgp92, imgp93, imgp94],
       icon: Monitor,
       color: "from-emerald-500 to-teal-500",
@@ -873,7 +873,7 @@ export default function Projects() {
                   size="lg"
                   className="hover:scale-105 transition-all duration-300 bg-transparent group"
                 >
-                  <Link href="mailto:sarah@example.com">
+                  <Link href="mailto:ashikamuthukuda@gmail.com">
                     Request Case Studies
                     <ExternalLink className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform" />
                   </Link>
