@@ -47,6 +47,10 @@ import imgp81 from "../../assets/imgs/img-p81.png";
 import imgp82 from "../../assets/imgs/img-p82.png";
 import imgp83 from "../../assets/imgs/img-p83.png";
 import imgp84 from "../../assets/imgs/img-p84.png";
+import imgp91 from "../../assets/imgs/img-p91.png";
+import imgp92 from "../../assets/imgs/img-p92.png";
+import imgp93 from "../../assets/imgs/img-p93.png";
+import imgp94 from "../../assets/imgs/img-p94.png";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -56,6 +60,23 @@ export default function Projects() {
   const closeModal = () => setSelectedImage(null);
 
   const projects = [
+    {
+      name: "Heroes United – Gaming UI Landing Page",
+      category: "Game Development • Web Designs",
+      overview:
+      "Heroes United is a cinematic, Avengers-inspired game landing page designed to deliver a powerful first impression for a superhero action game. The goal of this UI design is to create an immersive, high-energy experience that instantly attracts gamers and communicates the game’s core features, characters, and call-to-action in a visually engaging way. This landing page was designed with a strong focus on visual storytelling, user engagement, and modern gaming aesthetics.",
+      resources: [
+        "Pinterest, Google and Freepik (for imagery and layout ideas)",
+      ],
+      colors: ["Midnight Black / Deep Space Blackc", "Dark Crimson / Deep Maroon"],
+      images: [imgp91, imgp92, imgp93, imgp94],
+      icon: Monitor,
+      color: "from-emerald-500 to-teal-500",
+      featured: true,
+      normal: false,
+      year: "2026",
+      link: "https://bit.ly/4pIkk80",
+    },
     {
       name: "HealthChat AI – Your Personal Health Assistant",
       category: "Healthcare • Web Designs",

@@ -290,7 +290,7 @@ export default function Work() {
                             ))}
                           </div>
                         </div>
-                        <div className="grid grid-cols-5 gap-3 w-full relative group">
+                        <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 w-full relative group">
                           {job.images.slice(0, 5).map((src, i) => (
                             <div
                               key={i}
